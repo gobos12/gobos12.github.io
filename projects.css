@@ -1,0 +1,10 @@
+﻿.header{
+    margin-bottom:0px;
+}
+.shadowbox {
+    width: 320px;
+    height:180px;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    background-size: cover;
+}
