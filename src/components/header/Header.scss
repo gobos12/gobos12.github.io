@@ -1,0 +1,29 @@
+.headroom-wrapper {
+    max-height: 100px;
+}
+
+.header {
+    background-color: cornflowerblue;
+    max-width: 100%;
+    padding: 15px 20px;
+    margin: 0px auto;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu_btn:hover {
+    background-color: grey;
+}
