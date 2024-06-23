@@ -1,6 +1,6 @@
 const greeting = {
     username: "Orion Dobos",
-    title: "null",
+    title: "Hi, I'm Orion!",
     subTitle: "Game Developer and Computer Engineer",
     display: true
 };

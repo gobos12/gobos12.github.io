@@ -13,7 +13,14 @@ function Header()
     return(
         <Headroom>
             <header className="header">
-                <h1>Hello i am Orion</h1>
+                <input className="menu-btn" />
+                <ul className="menu">
+                    {
+                        viewSkills && (<li>
+                            <a href="#skills">Skills</a>
+                        </li>)
+                    }
+                </ul>
             </header>
         </Headroom>
     );

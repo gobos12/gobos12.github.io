@@ -1,9 +1,11 @@
+@import "./../../constants.scss";
+
 .headroom-wrapper {
     max-height: 100px;
 }
 
 .header {
-    background-color: cornflowerblue;
+    background-color: $backgroundColor;
     max-width: 100%;
     padding: 15px 20px;
     margin: 0px auto;
