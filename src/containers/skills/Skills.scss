@@ -1,0 +1,19 @@
+@import "./../../constants.scss";
+
+.skills-main {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skills-title {
+    margin-left: 50px;
+}
+
+.skills-subTitle {
+    color: $subTitleColor;
+}
+
+.skills-list {
+    font-size: 16px;
+}

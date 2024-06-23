@@ -5,7 +5,7 @@
 }
 
 .header {
-    background-color: $backgroundColor;
+    background-color: $backgroundColor !important;
     max-width: 100%;
     padding: 15px 20px;
     margin: 0px auto;
@@ -21,11 +21,86 @@
 .header li a {
     display: block;
     padding: 15px 20px;
-    color: black;
+    color: $textColor;
     text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu_btn:hover {
-    background-color: grey;
+    background-color: $buttonHoverColor;
 }
+
+.header .logo {
+    display: block;
+    flex: none;
+    float: left;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: normal;
+}
+
+.header .logo-name {
+    font-family: "Agustina Regular";
+    font-weight: bold;
+    font-variant-ligatures: no-common-ligatures;
+    padding: 0 10px;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu-btn {
+    display: none; 
+}
+
+/* Header Menu Icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: $backgroundColor;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before 
+.header .menu-icon .navicon:after {
+    background: $backgroundColor;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.header .menu_btn:checked ~ .menu {
+    max-height: 486px;
+}
+
+.header .menu_btn:checked ~ .menu-icon .navicon {
+    background-color: transparent !important;
+}
+
+.header .menu_btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu_btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+

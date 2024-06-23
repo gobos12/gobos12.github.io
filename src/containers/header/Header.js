@@ -13,13 +13,20 @@ function Header()
     return(
         <Headroom>
             <header className="header">
-                <input className="menu-btn" />
+                <a href="/" className="logo">
+                    <span className="logo-name">{greeting.username}</span>
+                </a>
+                <input className="menu-btn" type="checkbox" id="menu-btn"/>
+                <label className="menu-icon" htmlFor="menu-btn" style={{color:"black"}}>
+                    <span className="navicon"></span>
+                </label>
                 <ul className="menu">
                     {
-                        viewSkills && (<li>
+                        viewSkills && (
+                        <li>
                             <a href="#skills">Skills</a>
-                        </li>)
-                    }
+                        </li>
+                    )}
                 </ul>
             </header>
         </Headroom>
