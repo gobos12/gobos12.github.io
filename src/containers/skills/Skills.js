@@ -7,7 +7,7 @@ export default function Skills()
     if(!skills.display) return null;
 
     return (
-        <div className="skills-main" id="skills">
+        <div className="skills-section" id="skills">
             <h1 className="skills-title">
                 {skills.title}{""}
             </h1>

@@ -2,13 +2,19 @@ import React, { useContext } from "react";
 import Headroom from "react-headroom";
 import {
     greeting,
-    skills
+    skills,
+    workExperience,
+    projects,
+    education
 } from "../../details";
 import "./Header.scss";
 
 function Header()
 {
     const viewSkills = skills.display;
+    const viewWork = workExperience.display;
+    const viewProjects = projects.display;
+    const viewEdu = education.display;
 
     return(
         <Headroom>
@@ -26,7 +32,29 @@ function Header()
                         <li>
                             <a href="#skills">Skills</a>
                         </li>
-                    )}
+                        )
+                    }
+                    {
+                        viewEdu && (
+                            <li>
+                                <a href="#education">Education</a>
+                            </li>
+                        )
+                    }
+                    {
+                        viewWork && (
+                            <li>
+                                <a href="#experience">Experience</a>
+                            </li>
+                        )
+                    }
+                    {
+                        viewProjects && (
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                        )
+                    }
                 </ul>
             </header>
         </Headroom>
