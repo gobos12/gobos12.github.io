@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
-import {greeting} from "./../../details";
+import React from "react";
+import {Fade} from "react-reveal";
+import {greeting} from "../../details";
 import "./Greeting.scss";
 
 export default function Greeting()
@@ -7,13 +8,16 @@ export default function Greeting()
     if(!greeting.display) return null;
 
     return (
-        <div className="greet-main" id="greeting">
-            <div className="greeting-text">
-                <h1 className="greeting-title">
-                    {""} {greeting.title} {""}
-                </h1>
+        <Fade bottom duration={1000} distance={"40px"}>
+            <div className="greet-main" id="greeting">
+                <div className="greet-text">
+                    <h1 className="greet-title">{greeting.title}</h1>
+                    <p className="greet-subTitle">{greeting.subTitle}</p>
+                    <div className="greet-buttons">
+                        
+                    </div>
+                </div>
             </div>
-        </div>
-
+        </Fade>
     );
 }

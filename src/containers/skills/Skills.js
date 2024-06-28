@@ -8,12 +8,8 @@ export default function Skills()
 
     return (
         <div className="skills-section" id="skills">
-            <h1 className="skills-title">
-                {skills.title}{""}
-            </h1>
-            <p className="skills-subTitle">
-                {skills.subTitle}
-            </p>
+            <h1 className="skills-title">{skills.title}</h1>
+            <p className="skills-subTitle">{skills.subTitle}</p>
             <div className="skills-list">
                 {skills.skills.map((skills, i) => {
                     return (

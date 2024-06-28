@@ -8,7 +8,7 @@ export default function Education()
 
     return (
       <div className="edu-section" id="edu">
-          <h1 className={"edu-header"}>Education</h1>
+          <h1 className={"edu-header"}>{education.title}</h1>
       </div>
     );
 }

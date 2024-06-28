@@ -15,15 +15,66 @@ const skills = {
     display: true
 };
 
-const workExperience = {
+const experience = {
+    title: "Experience",
+    experience: [
+        {
+            role: "Extended Reality Creative Developer",
+            company: "Meteor Studio",
+            companyLogo: "",
+            date: "June 2022 - Present",
+            description: "",
+            descBullets: [
+
+            ]
+        },
+        {
+            role: "Teachers Assistant",
+            company: "",
+            companyLogo: "",
+            date: "",
+            description: "",
+            descBullets: [
+
+            ]
+        },
+        {
+            role: "SCAI Mentor",
+            company: "",
+            companyLogo: "",
+            date: "",
+            description: "",
+            descBullets: ""
+        }
+    ],
     display: true
 };
 
 const projects = {
+    title: "Professional Projects",
+    projects: [
+        {
+            name: "",
+            logo: "",
+            description: "",
+            footerLink: [
+                {
+                    name: "",
+                    url: ""
+                }
+            ]
+        }
+    ],
     display: true
 };
 
+const github = {
+    title: "Personal Projects",
+    display: true
+}
+
 const education = {
+    title: "Education",
     schools: [
         {
             name: "Arizona State University",
@@ -38,14 +89,16 @@ const education = {
 };
 
 const resume = {
+    title: "Download my resume!",
     display: true
 };
 
 export {
     greeting,
     skills,
-    workExperience,
+    experience,
     projects,
     education,
-    resume
+    resume,
+    github
 };

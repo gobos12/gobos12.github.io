@@ -3,7 +3,7 @@ import Headroom from "react-headroom";
 import {
     greeting,
     skills,
-    workExperience,
+    experience,
     projects,
     education
 } from "../../details";
@@ -12,7 +12,7 @@ import "./Header.scss";
 function Header()
 {
     const viewSkills = skills.display;
-    const viewWork = workExperience.display;
+    const viewWork = experience.display;
     const viewProjects = projects.display;
     const viewEdu = education.display;
 
@@ -37,14 +37,14 @@ function Header()
                     {
                         viewEdu && (
                             <li>
-                                <a href="#education">Education</a>
+                                <a href="#edu">Education</a>
                             </li>
                         )
                     }
                     {
                         viewWork && (
                             <li>
-                                <a href="#experience">Experience</a>
+                                <a href="#exp">Experience</a>
                             </li>
                         )
                     }
