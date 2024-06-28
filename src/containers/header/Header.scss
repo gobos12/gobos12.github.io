@@ -21,13 +21,13 @@
 .header li a {
     display: block;
     padding: 15px 20px;
-    color: $textColor;
+    color: $headerText;
     text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu_btn:hover {
-    background-color: $buttonHoverColor;
+    background-color: $buttonHover;
 }
 
 .header .logo {

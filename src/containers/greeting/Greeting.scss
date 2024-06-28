@@ -3,13 +3,28 @@
 .greet-main {
     width: 90%;
     padding: 20px 10px;
-    margin: 0x auto;
-    margin-top: 4rem;
+    margin: 2rem auto 0;
     display: flex;
+}
+
+.greet-main > * {
+    flex: 1;
+    margin-bottom: 30px;
 }
 
 .greet-text {
     font-size: 70px;
     line-height: 1.1;
     color: $textColor !important;
+}
+
+.greet-title {
+    font-size: 70px;
+    line-height: 1.1;
+    color: $titleColor !important;
+}
+
+.greet-subTitle {
+    font-size: 40px;
+    color: $subTitleColor !important;
 }

@@ -23,7 +23,7 @@ function Header()
                     <span className="logo-name">{greeting.username}</span>
                 </a>
                 <input className="menu-btn" type="checkbox" id="menu-btn"/>
-                <label className="menu-icon" htmlFor="menu-btn" style={{color:"black"}}>
+                <label className="menu-icon" htmlFor="menu-btn" style={{color:"white"}}>
                     <span className="navicon"></span>
                 </label>
                 <ul className="menu">

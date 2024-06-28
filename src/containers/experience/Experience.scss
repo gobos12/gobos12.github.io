@@ -1,0 +1,30 @@
+@import "./../../utils/constants";
+
+.exp-title{
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.exp-container {
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 2rem auto 0;
+}
+
+.exp-container > * {
+  flex: 1;
+}
+
+@media (max-width: 1380px) {
+  .exp-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exp-title {
+    font-size: 30px;
+    text-align: center;
+  }
+}

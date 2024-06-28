@@ -1,19 +1,32 @@
 @import "../../utils/constants";
 
-.skills-section {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-}
-
 .skills-title {
     margin-left: 50px;
+    font-weight: 400;
 }
 
-.skills-subTitle {
-    color: $subTitleColor;
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px 10px;
+    margin: 2rem auto 0;
 }
 
-.skills-list {
-    font-size: 16px;
+.skills-section > * {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1380px){
+    .skills-title{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px){
+    .skills-title{
+        font-size: 30px;
+        align: center;
+    }
 }

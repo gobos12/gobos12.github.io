@@ -1,0 +1,32 @@
+@import "./../../utils/constants";
+
+.projects-title {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 2rem auto 0;
+}
+
+.projects-section > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1380px) {
+  .projects-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 30px;
+    align: center;
+  }
+}
