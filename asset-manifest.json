@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcac2d7b.css",
-    "main.js": "/static/js/main.25faf481.js",
+    "main.css": "/static/css/main.d203e6ad.css",
+    "main.js": "/static/js/main.79535da5.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/asuLogo.png": "/static/media/asuLogo.c1b630cf80273382f709.png",
     "index.html": "/index.html",
-    "main.bcac2d7b.css.map": "/static/css/main.bcac2d7b.css.map",
-    "main.25faf481.js.map": "/static/js/main.25faf481.js.map",
+    "main.d203e6ad.css.map": "/static/css/main.d203e6ad.css.map",
+    "main.79535da5.js.map": "/static/js/main.79535da5.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcac2d7b.css",
-    "static/js/main.25faf481.js"
+    "static/css/main.d203e6ad.css",
+    "static/js/main.79535da5.js"
   ]
 }
