@@ -76,7 +76,7 @@ const education = {
     schools: [
         {
             name: "Arizona State University",
-            logo: require("./assets/asuLogo.png"),
+            logo: require("./assets/images/asuLogo.png"),
             degree: "Bachelor of Science in Engineering in Computer Systems Engineering",
             duration: "August 2020 - May 2024",
             gpa: "3.89 / 4.00"

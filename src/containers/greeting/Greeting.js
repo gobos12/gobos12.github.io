@@ -11,7 +11,7 @@ export default function Greeting()
         <Fade bottom duration={1000} distance={"40px"}>
             <div className="greet-section" id="greeting">
                 <div className="greet-gif">
-                    <img src={require("./sitGif.gif")} alt="Idle Robot" width="500" height="550"/>
+                    <img src={require("../../assets/images/roboSit.gif")} alt="Idle Robot" width="500" height="550"/>
                 </div>
                 <div className="greet-text">
                     <h1 className="greet-title">{greeting.title}</h1>

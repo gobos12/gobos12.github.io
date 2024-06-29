@@ -1,13 +1,28 @@
-body {
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("RobotoMono-Regular"),
+        url("./assets/fonts/RobotoMono/RobotoMono-Regular.ttf") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  src: local("RobotoMono-Bold"),
+  url("./assets/fonts/RobotoMono/RobotoMono-Bold.ttf") format("woff");
+  font-display: swap;
+}
+
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font: 19px/23px Roboto, "Roboto Regular", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
