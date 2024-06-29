@@ -6,11 +6,9 @@ const greeting = {
 };
 
 const skills = {
-    title: "What I do",
+    title: "Skills",
     subTitle: "Some of my skills!",
     skills: [
-        "skill number 1",
-        "skill number 2"
     ],
     display: true
 };

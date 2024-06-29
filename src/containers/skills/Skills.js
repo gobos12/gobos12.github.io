@@ -10,7 +10,7 @@ export default function Skills()
     return (
         <div id="skills">
             <Fade bottom duration={1000} distance="20px">
-                <div className="skills-section" id="skills">
+                <div className="skills-section">
                     <h1 className="skills-title">{skills.title}</h1>
                 </div>
             </Fade>

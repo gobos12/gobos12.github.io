@@ -10,7 +10,7 @@ export default function Experience()
     return(
       <div id="exp">
           <Fade bottom duration={1000} distance="20px">
-              <div className="exp-container" id="experience">
+              <div className="exp-container">
                   <h1 className="exp-title">{experience.title}</h1>
               </div>
           </Fade>
