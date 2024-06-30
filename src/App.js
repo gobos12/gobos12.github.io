@@ -11,9 +11,10 @@ function App() {
     <div className="App">
         <Header />
         <Greeting />
+        <Education />
         <Skills />
         <Experience />
-        <Education />
+
         <Projects />
     </div>
   );

@@ -18,6 +18,12 @@
   margin-bottom: 30px;
 }
 
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
 @media (max-width: 1380px){
   .edu-title{
     font-size: 40px;

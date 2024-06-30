@@ -1,0 +1,76 @@
+@import "./../../utils/constants";
+
+.edu-border {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px $shadowBefore;
+  transition: all 0.3s ease-in-out;
+}
+
+.edu-border::after{
+  position: absolute;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px $shadowAfter;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.edu-border:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.edu-border:hover::after {
+  opacity: 1;
+}
+
+.edu-img {
+  position: absolute;
+  top: 50%;
+  margin: -4rem 1rem 0 1rem;
+  object-fit: cover;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.edu-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.edu-text {
+  margin: 1rem 0 1rem 10rem;
+}
+
+.edu-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+}
+
+.edu-details > * {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 1rem 1rem 0.5rem 1.5rem;
+}
+
+.edu-degree {
+
+}
+
+.edu-duration {
+
+}
+
+.edu-gpa {
+
+}
+
+@media (max-width: 1380px){
+
+}
+
+@media (max-width: 768px){
+
+}
+

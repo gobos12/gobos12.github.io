@@ -5,6 +5,7 @@ $subTitleColor: #605F5E;
 
 $backgroundColor: #FEFFFE;
 
+// header
 $headerColor: #004F2D;
 $headerText: #ffffff;
 
@@ -12,4 +13,8 @@ $headerText: #ffffff;
 $buttonColor: #FEFFFE;
 $buttonHover: #BAD4AA;
 $buttonClick: #E2E2E2;
+
+// shadow-box transition colors
+$shadowBefore: rgba(0, 0, 0, 1);
+$shadowAfter: rgba(0, 0, 0, 1);
 
