@@ -1,8 +1,7 @@
 @import "./../../utils/constants";
 
-.projects-title {
-  font-size: 50px;
-  font-weight: 400;
+.projects {
+  background-color: $bgColor02;
 }
 
 .projects-section {
@@ -16,6 +15,11 @@
 .projects-section > * {
   flex: 1;
   margin-bottom: 30px;
+}
+
+.projects-title {
+  font-size: 50px;
+  font-weight: 400;
 }
 
 @media (max-width: 1380px) {

@@ -8,7 +8,7 @@ export default function Projects()
     if(!projects.display) return null;
 
     return (
-        <div id="projects">
+        <div className="projects" id="projects">
             <Fade bottom duration={1000} distance="20px">
                 <div className="projects-section">
                     <h1 className="projects-title">{projects.title}</h1>

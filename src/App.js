@@ -4,6 +4,7 @@ import Skills from "./containers/skills/Skills";
 import Education from "./containers/education/Education";
 import Projects from "./containers/projects/Projects";
 import Experience from "./containers/experience/Experience";
+import Certificate from "./containers/certificates/Certificates";
 import './App.scss';
 
 function App() {
@@ -11,10 +12,10 @@ function App() {
     <div className="App">
         <Header />
         <Greeting />
+        <Experience />
         <Education />
         <Skills />
-        <Experience />
-
+        <Certificate />
         <Projects />
     </div>
   );

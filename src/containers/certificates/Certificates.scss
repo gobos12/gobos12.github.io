@@ -1,10 +1,10 @@
 @import "./../../utils/constants";
 
-.edu {
+.cert {
   background-color: $bgColor01;
 }
 
-.edu-section {
+.cert-section {
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -12,30 +12,24 @@
   margin: 2rem auto 0;
 }
 
-.edu-section > * {
+.cert-section > * {
   flex: auto;
   margin-bottom: 30px;
 }
 
-.edu-title > h1{
+.cert-title > h1{
   font-size: 50px;
   font-weight: 400;
 }
 
-.edu-card {
-  display: flex;
-  padding-top: 20px;
-  padding-left: 3rem;
-}
-
 @media (max-width: 1380px){
-  .edu-title > h1{
+  .cert-title > h1{
     font-size: 40px;
   }
 }
 
 @media (max-width: 768px){
-  .edu-title > h1{
+  .cert-title > h1{
     font-size: 30px;
   }
 }

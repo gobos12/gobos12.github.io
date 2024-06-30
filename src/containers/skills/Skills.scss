@@ -1,21 +1,35 @@
 @import "../../utils/constants";
 
-.skills-title {
-    font-size: 50px;
-    font-weight: 400;
+.skills {
+    background-color: $bgColor02;
 }
 
 .skills-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: auto;
     width: 90%;
     padding: 20px 10px;
     margin: 2rem auto 0;
 }
 
 .skills-section > * {
-    flex: 1;
+    flex: auto;
     margin-bottom: 30px;
+}
+
+.skills-title {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.skills-subTitle {
+    font-size: 25px;
+    margin-left: 2rem;
+}
+
+.skills-card {
+    margin-left: 2rem;
 }
 
 @media (max-width: 1380px){
@@ -27,6 +41,5 @@
 @media (max-width: 768px){
     .skills-title{
         font-size: 30px;
-        align: center;
     }
 }

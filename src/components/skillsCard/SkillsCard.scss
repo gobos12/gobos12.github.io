@@ -1,0 +1,47 @@
+@import "./../../utils/constants";
+
+.skills-border {
+  position: relative;
+  margin-left: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px $shadowBefore;
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-border::after {
+  position: absolute;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px $shadowAfter;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skills-border:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.skills-border:hover::after {
+  opacity: 1;
+}
+
+.skills-img {
+  position: absolute;
+  top: 50%;
+  margin: -2.5rem 1rem 0 2rem;
+  object-fit: contain;
+  width: 5rem;
+  height: 5rem;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.skills-name {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 2.5rem 1rem 1rem 8rem;  // TODO: fix this so it aligns w image, dont hardcode numbers
+}

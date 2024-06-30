@@ -1,0 +1,73 @@
+@import "./../../utils/constants";
+
+.exp-border {
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px $shadowBefore;
+  transition: all 0.3s ease-in-out;
+}
+
+.exp-border::after {
+  position: absolute;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px $shadowAfter;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.exp-border:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.exp-border:hover::after {
+  opacity: 1;
+}
+
+
+.exp-img {
+  position: absolute;
+  top: 50%;
+  margin: -5rem 1rem 0 2rem;
+  object-fit: contain;
+  width: 10rem;
+  height: 10rem;
+  //border-radius: 50%;
+}
+
+.exp-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-text {
+  margin: 1rem 1rem 1rem 10rem;
+}
+
+.exp-role {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+}
+
+.exp-details > * {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 1rem 0 0.5rem 1.5rem;
+}
+
+.exp-company {
+
+}
+
+.exp-date {
+
+}
+
+.exp-desc {
+
+}
+
+.exp-bullets {
+
+}
