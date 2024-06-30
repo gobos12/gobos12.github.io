@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9019b1d.css",
-    "main.js": "/static/js/main.49938b29.js",
+    "main.css": "/static/css/main.a9a30a15.css",
+    "main.js": "/static/js/main.0c9340e9.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/roboSit.gif": "/static/media/roboSit.f1a5903be63c2530edf8.gif",
     "static/media/asuLogo.png": "/static/media/asuLogo.c1b630cf80273382f709.png",
     "static/media/RobotoMono-Bold.ttf": "/static/media/RobotoMono-Bold.7211ab61a8b83177865a.ttf",
     "static/media/RobotoMono-Regular.ttf": "/static/media/RobotoMono-Regular.94ffabb10cbc81ee42ba.ttf",
     "index.html": "/index.html",
-    "main.f9019b1d.css.map": "/static/css/main.f9019b1d.css.map",
-    "main.49938b29.js.map": "/static/js/main.49938b29.js.map",
+    "main.a9a30a15.css.map": "/static/css/main.a9a30a15.css.map",
+    "main.0c9340e9.js.map": "/static/js/main.0c9340e9.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9019b1d.css",
-    "static/js/main.49938b29.js"
+    "static/css/main.a9a30a15.css",
+    "static/js/main.0c9340e9.js"
   ]
 }
