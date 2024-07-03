@@ -10,27 +10,27 @@ const skills = {
     subTitle: "Some of my skills!",
     skills: [
         {
-            name: "HTML5",
+            title: "HTML5",
             logo: require("./assets/images/skillLogos/htmlLogo.png")
         },
         {
-            name: "C++",
+            title: "C++",
             logo: require("./assets/images/skillLogos/cppLogo.png")
         },
         {
-            name: "C#",
+            title: "C#",
             logo: require("./assets/images/skillLogos/csharpLogo.png")
         },
         {
-            name: "Python",
+            title: "Python",
             logo: require("./assets/images/skillLogos/pythonLogo.png")
         },
         {
-            name: "Unity",
+            title: "Unity",
             logo: require("./assets/images/skillLogos/unityLogo.png")
         },
         {
-            name: "Unreal",
+            title: "Unreal",
             logo: require("./assets/images/skillLogos/unrealLogo.png")
         }
     ],
@@ -41,12 +41,13 @@ const experience = {
     title: "Experience",
     experience: [
         {
-            role: "Extended Reality Creative Developer",
-            company: "Meteor Studio",
+            title: "Extended Reality Creative Developer",
+            subTitle: "Meteor Studio",
             logo: require("./assets/images/MeteorStudioLogo2018.png"),
             date: "June 2022 - Present",
             description: "",
-            descBullets: [
+            link: "https://meteor.ame.asu.edu/",
+            bullets: [
                 "Lead developer for Planetary Parfait, an award-winning virtual reality application that utilizes \n" +
                 "the Unity Game Engine to build 3D terrains using remote-sensing data from GIS tools.",
                 "Coordinated the Cloud Infrastructure Guild at Meteor Studio, with a focus on upskilling \n" +
@@ -57,12 +58,12 @@ const experience = {
             ]
         },
         {
-            role: "Teachers Assistant",
-            company: "Ira A. Fulton Fulton Schools of Engineering",
+            title: "Teachers Assistant",
+            subTitle: "Ira A. Fulton Fulton Schools of Engineering",
             logo: require("./assets/images/fultonLogo.png"),
             date: "August 2022 - May 2024",
             description: "",
-            descBullets: [
+            bullets: [
                 "Aided students in programming and debugging their projects in Gamemaker Studio and the \n" +
                 "Unity Game Engine throughout the semester.",
                 "Led a lecture series on integrating multiplayer systems within a Unity project.",
@@ -71,12 +72,12 @@ const experience = {
             ]
         },
         {
-            role: "SCAI Mentor",
-            company: "SCAI Academic Advising Office",
+            title: "SCAI Mentor",
+            subTitle: "SCAI Academic Advising Office",
             logo: require("./assets/images/fultonLogo.png"),
             date: "May 2022 - December 2023",
             description: "",
-            descBullets: [
+            bullets: [
                 "Worked with incoming and current freshman SCAI students to help ease them into their first \n" +
                 "year at ASU.",
                 "Panelist for SCAI’s the Limit events, offering advice and answering questions for freshman \n" +
@@ -92,14 +93,11 @@ const projects = {
     title: "Professional Projects",
     projects: [
         {
-            name: "",
+            title: "",
             logo: "",
             description: "",
-            footerLink: [
-                {
-                    name: "",
-                    url: ""
-                }
+            bullets: [
+
             ]
         }
     ],
@@ -115,11 +113,11 @@ const education = {
     title: "Education",
     schools: [
         {
-            name: "Arizona State University",
+            title: "Arizona State University",
+            subTitle: "Bachelor of Science in Engineering in Computer Systems Engineering",
             logo: require("./assets/images/asuLogo.png"),
-            degree: "Bachelor of Science in Engineering in Computer Systems Engineering",
-            duration: "August 2020 - May 2024",
-            gpa: "3.89 / 4.00"
+            date: "August 2020 - May 2024",
+            description: "3.89 / 4.00"
         }
     ],
 
@@ -130,10 +128,11 @@ const certs = {
     title: "Certifications",
     certs: [
         {
-            name: "",
-            dist: "",
-            link: "",
-            date: ""
+            title: "",
+            subTitle: "", // where it came from
+            logo: "",
+            date: "",
+            description: ""  // link to distributor (if there is one
         }
     ],
 

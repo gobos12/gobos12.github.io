@@ -2,7 +2,7 @@ import React from "react";
 import "./Skills.scss";
 import {Fade} from "react-reveal";
 import {skills} from "../../details";
-import SkillsCard from "../../components/skillsCard/SkillsCard";
+//import SkillsCard from "../../components/skillsCard/SkillsCard";
 
 export default function Skills()
 {
@@ -17,9 +17,9 @@ export default function Skills()
                         <p className="skills-subTitle">{skills.subTitle}</p>
                     </div>
                     <div className="skills-card">
-                        {skills.skills.map((skill, i) =>
-                            <SkillsCard key={i} skill={skill}/>
-                        )}
+                        {/*{skills.skills.map((skill, i) =>*/}
+                        {/*    <Card key={i} card={skill}/>*/}
+                        {/*)}*/}
                     </div>
                 </div>
             </Fade>

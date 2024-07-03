@@ -2,7 +2,8 @@ import React from "react";
 import "./Education.scss";
 import {Fade} from "react-reveal";
 import { education } from "../../details";
-import EduCard from "../../components/eduCard/EduCard";
+//import EduCard from "../../components/eduCard/EduCard";
+import Card from "../../components/card/Card";
 
 export default function Education()
 {
@@ -17,7 +18,7 @@ export default function Education()
                   </div>
                   <div className="edu-card">
                   {education.schools.map((school, index) => (
-                          <EduCard key={index} school={school}/>
+                          <Card key={index} card={school}/>
                       ))}
                   </div>
               </div>

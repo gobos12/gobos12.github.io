@@ -3,6 +3,7 @@ import "./Experience.scss";
 import {Fade} from "react-reveal";
 import {experience} from "../../details";
 import ExpCard from "../../components/expCard/ExpCard";
+import Card from "../../components/card/Card";
 
 export default function Experience()
 {
@@ -17,7 +18,7 @@ export default function Experience()
                   </div>
                   <div className="exp-card">
                   {experience.experience.map((card, i) => (
-                      <ExpCard key={i} card={card}/>
+                      <Card key={i} card={card}/>
                   ))}
                   </div>
               </div>

@@ -1,0 +1,140 @@
+@import "./../../utils/constants";
+
+.card {
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px $shadowBefore;
+  transition: all 0.3s ease-in-out;
+}
+
+.card::after {
+  position: absolute;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px $shadowAfter;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.button {
+  color: $textColor;
+  text-decoration: none;
+}
+
+.card-img {
+  position: absolute;
+  top: 50%;
+  margin: -5rem 1rem 0 2rem;
+  object-fit: contain;
+  width: 10rem;
+  height: 10rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 1rem 12rem;
+}
+
+.card-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+}
+
+.card-subtitle{
+  font-size: 20px;
+  font-weight: normal;
+  margin: 1rem 0 0.5rem 1.5rem;
+}
+
+.card-details > * {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 1rem 0 0.5rem 1.5rem;
+}
+
+.card-date {
+
+}
+
+.card-desc {
+
+}
+
+.bullet {
+
+}
+
+@media (max-width: $desktop-width)
+{
+
+}
+
+@media (max-width: $tablet-width)
+{
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-subtitle {
+    font-size: 18px;
+  }
+
+  .card-details > * {
+    font-size: 14px;
+  }
+
+  .card-img {
+    position: relative;
+    left: 50%;
+    object-fit: contain;
+    width: 8rem;
+    height: 8rem;
+    margin: 0.5rem 0 0.5rem -4rem;
+  }
+}
+
+@media (max-width: $phone-width)
+{
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-subtitle {
+    font-size: 18px;
+  }
+
+  .card-details > * {
+    font-size: 14px;
+  }
+
+  .card-img {
+    position: relative;
+    left: 50%;
+    object-fit: contain;
+    width: 8rem;
+    height: 8rem;
+    margin: 0.5rem 0 0.5rem -4rem;
+  }
+}
