@@ -7,7 +7,7 @@
 .skills-section {
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    overflow-wrap: anywhere;
     width: 90%;
     padding: 20px 10px;
     margin: 2rem auto 0;
@@ -29,16 +29,20 @@
 }
 
 .skills-card {
-    margin-left: 2rem;
+    //margin-left: 2rem;
 }
 
-@media (max-width: 1380px){
+@media (max-width: $desktop-width){
     .skills-title{
         font-size: 40px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: $tablet-width){
+    .skills-section {
+        flex-direction: column;
+    }
+
     .skills-title{
         font-size: 30px;
     }

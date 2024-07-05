@@ -2,7 +2,7 @@ import React from "react";
 import "./Experience.scss";
 import {Fade} from "react-reveal";
 import {experience} from "../../details";
-import ExpCard from "../../components/expCard/ExpCard";
+import ExpCard from "../../components/_legacy/expCard/ExpCard";
 import Card from "../../components/card/Card";
 
 export default function Experience()

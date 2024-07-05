@@ -1,20 +1,23 @@
 import React, {createRef} from "react";
+import {skills} from "../../details";
 import "./SkillsCard.scss";
 
-export default function SkillsCard({skill}){
+export default function SkillsCard({card}){
     const imgRef = createRef();
 
     return (
-        <div className="skills-border">
-            {
-                skill.logo && (
-                    <div>
-                        <img ref={imgRef} className="skills-img" src={skill.logo} alt={skill.name}/>
-                    </div>
-                )
-            }
+        <div>
             <div className="skills-card">
-                <h5 className="skills-name">{skill.name}</h5>
+                <ul className="skill-icons">
+                    {
+                        skills.skills.map((skills, i) => {
+                            return (
+                                <li key={i} className="skills-inline" title={skills.title}>
+
+                                </li>);
+                        })
+                    }
+                </ul>
             </div>
         </div>
     );

@@ -28,15 +28,30 @@
   padding-left: 3rem;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: $desktop-width) {
   .exp-title > h1{
     font-size: 40px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet-width) {
+  .exp-section {
+    flex-direction: column;
+  }
+
   .exp-title > h1{
     font-size: 30px;
     text-align: center;
   }
+
+  .exp-card {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: $phone-width) {
+  //.exp-title > h1{
+  //  font-size: 30px;
+  //  text-align: center;
+  //}
 }

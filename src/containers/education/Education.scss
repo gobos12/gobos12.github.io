@@ -28,14 +28,23 @@
   padding-left: 3rem;
 }
 
-@media (max-width: 1380px){
+@media (max-width: $desktop-width){
   .edu-title > h1{
     font-size: 40px;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: $tablet-width){
+  .edu-section {
+    flex-direction: column;
+  }
+
   .edu-title > h1{
     font-size: 30px;
+    text-align: center;
+  }
+
+  .edu-card {
+    padding-left: 1rem;
   }
 }

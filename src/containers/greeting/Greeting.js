@@ -9,12 +9,12 @@ export default function Greeting()
 
     return (
         <Fade bottom duration={1000} distance={"40px"}>
+            <h1 className="greet-title">{greeting.title}</h1>
             <div className="greet-section" id="greeting">
                 <div className="greet-gif">
-                    <img src={require("../../assets/images/roboSit.gif")} alt="Idle Robot" width="500" height="550"/>
+                    <img src={greeting.logo} alt="Idle Robot" width="500" height="550"/>
                 </div>
                 <div className="greet-text">
-                    <h1 className="greet-title">{greeting.title}</h1>
                     <p className="greet-subTitle">{greeting.subTitle}</p>
                     <div className="greet-buttons">
                     </div>

@@ -103,38 +103,13 @@
     position: relative;
     left: 50%;
     object-fit: contain;
-    width: 8rem;
-    height: 8rem;
-    margin: 0.5rem 0 0.5rem -4rem;
+    width: 8.5rem;
+    height: 8.5rem;
+    margin: 0.5rem 0 0rem -4.25rem;
   }
 }
 
 @media (max-width: $phone-width)
 {
-  .card-text {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 1rem 1rem 1rem;
-  }
 
-  .card-title {
-    font-size: 22px;
-  }
-
-  .card-subtitle {
-    font-size: 18px;
-  }
-
-  .card-details > * {
-    font-size: 14px;
-  }
-
-  .card-img {
-    position: relative;
-    left: 50%;
-    object-fit: contain;
-    width: 8rem;
-    height: 8rem;
-    margin: 0.5rem 0 0.5rem -4rem;
-  }
 }

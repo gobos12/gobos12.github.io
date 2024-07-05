@@ -1,6 +1,7 @@
 const greeting = {
     username: "Orion Dobos",
     title: "Orion Dobos",
+    logo: require("./assets/images/roboSit.gif"),
     subTitle: "Game Developer and Computer Engineer",
     display: true
 };
@@ -11,27 +12,33 @@ const skills = {
     skills: [
         {
             title: "HTML5",
-            logo: require("./assets/images/skillLogos/htmlLogo.png")
+            logo: require("./assets/images/skillLogos/htmlLogo.png"),
+            fontAwesome: "fa-brands fa-html5"
         },
         {
             title: "C++",
-            logo: require("./assets/images/skillLogos/cppLogo.png")
+            logo: require("./assets/images/skillLogos/cppLogo.png"),
+            fontAwesome: ""
         },
         {
             title: "C#",
-            logo: require("./assets/images/skillLogos/csharpLogo.png")
+            logo: require("./assets/images/skillLogos/csharpLogo.png"),
+            fontAwesome: ""
         },
         {
             title: "Python",
-            logo: require("./assets/images/skillLogos/pythonLogo.png")
+            logo: require("./assets/images/skillLogos/pythonLogo.png"),
+            fontAwesome: ""
         },
         {
             title: "Unity",
-            logo: require("./assets/images/skillLogos/unityLogo.png")
+            logo: require("./assets/images/skillLogos/unityLogo.png"),
+            fontAwesome: ""
         },
         {
             title: "Unreal",
-            logo: require("./assets/images/skillLogos/unrealLogo.png")
+            logo: require("./assets/images/skillLogos/unrealLogo.png"),
+            fontAwesome: ""
         }
     ],
     display: true

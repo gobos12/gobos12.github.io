@@ -1,14 +1,14 @@
-@import "./../../utils/constants";
+@import "../../../utils/constants";
 
-// box transition
-.edu-border {
+.exp-border {
   position: relative;
+  margin-bottom: 2rem;
   border-radius: 5px;
   box-shadow: 0 1px 2px $shadowBefore;
   transition: all 0.3s ease-in-out;
 }
 
-.edu-border::after{
+.exp-border::after {
   position: absolute;
   opacity: 0;
   border-radius: 5px;
@@ -16,63 +16,58 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.edu-border:hover {
+.exp-border:hover {
   transform: scale(1.1, 1.1);
 }
 
-.edu-border:hover::after {
+.exp-border:hover::after {
   opacity: 1;
 }
 
-// logo
-.edu-img {
+
+.exp-img {
   position: absolute;
   top: 50%;
-  margin: -4rem 1rem 0 2rem;
-  object-fit: cover;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
+  margin: -5rem 1rem 0 2rem;
+  object-fit: contain;
+  width: 10rem;
+  height: 10rem;
+  //border-radius: 50%;
 }
 
-.edu-card {
+.exp-card {
   display: flex;
   flex-direction: column;
 }
 
-.edu-text {
+.exp-text {
   margin: 1rem 1rem 1rem 10rem;
 }
 
-.edu-name {
+.exp-role {
   font-size: 30px;
   font-weight: bold;
   margin: 0 0 0.5rem 0;
 }
 
-.edu-details > * {
+.exp-details > * {
   font-size: 20px;
   font-weight: normal;
   margin: 1rem 0 0.5rem 1.5rem;
 }
 
-.edu-degree {
+.exp-company {
 
 }
 
-.edu-duration {
+.exp-date {
 
 }
 
-.edu-gpa {
+.exp-desc {
 
 }
 
-@media (max-width: 1380px){
+.exp-bullets {
 
 }
-
-@media (max-width: 768px){
-
-}
-

@@ -5,6 +5,7 @@
     padding: 20px 10px;
     margin: 2rem auto 0;
     display: flex;
+    flex-direction: row;
 }
 
 .greet-section > * {
@@ -13,18 +14,24 @@
 }
 
 .greet-text {
+    position: relative;
     font-size: 70px;
     line-height: 1.1;
+    text-align: right;
     color: $textColor !important;
 }
 
 .greet-title {
+    text-align: center;
     font-size: 70px;
     line-height: 1.1;
     color: $titleColor !important;
 }
 
 .greet-subTitle {
+    position: absolute;
+    top: 50%;
+    margin: -20px 0 0 0;
     font-size: 40px;
     color: $subTitleColor !important;
 }
@@ -32,4 +39,20 @@
 .greet-gif > img {
     max-width: 100%;
     height: auto;
+}
+
+@media (max-width: $desktop-width)
+{
+
+}
+
+@media (max-width: $tablet-width)
+{
+    .greet-section {
+        flex-direction: column;
+    }
+
+    .greet-text {
+        text-align: center;
+    }
 }
