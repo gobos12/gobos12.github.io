@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.09e41f30.css",
-    "main.js": "/static/js/main.a2844256.js",
+    "main.css": "/static/css/main.d60ee2cf.css",
+    "main.js": "/static/js/main.b27cc80a.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/roboSit.gif": "/static/media/roboSit.f1a5903be63c2530edf8.gif",
     "static/media/asuLogo.png": "/static/media/asuLogo.c1b630cf80273382f709.png",
@@ -15,12 +15,12 @@
     "static/media/fultonLogo.png": "/static/media/fultonLogo.739a6130272a477b027a.png",
     "static/media/MeteorStudioLogo2018.png": "/static/media/MeteorStudioLogo2018.0a1956b7a933dff313a8.png",
     "index.html": "/index.html",
-    "main.09e41f30.css.map": "/static/css/main.09e41f30.css.map",
-    "main.a2844256.js.map": "/static/js/main.a2844256.js.map",
+    "main.d60ee2cf.css.map": "/static/css/main.d60ee2cf.css.map",
+    "main.b27cc80a.js.map": "/static/js/main.b27cc80a.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09e41f30.css",
-    "static/js/main.a2844256.js"
+    "static/css/main.d60ee2cf.css",
+    "static/js/main.b27cc80a.js"
   ]
 }
