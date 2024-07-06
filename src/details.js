@@ -9,34 +9,34 @@ const greeting = {
 const skills = {
     title: "Skills",
     subTitle: "Some of my skills!",
-    skills: [
+    softwareSkills: [
         {
-            title: "HTML5",
+            name: "HTML5",
             logo: require("./assets/images/skillLogos/htmlLogo.png"),
-            fontAwesome: "fa-brands fa-html5"
+            fontAwesome: "fab fa-html5"
         },
         {
-            title: "C++",
+            name: "C++",
             logo: require("./assets/images/skillLogos/cppLogo.png"),
             fontAwesome: ""
         },
         {
-            title: "C#",
+            name: "C#",
             logo: require("./assets/images/skillLogos/csharpLogo.png"),
             fontAwesome: ""
         },
         {
-            title: "Python",
+            name: "Python",
             logo: require("./assets/images/skillLogos/pythonLogo.png"),
-            fontAwesome: ""
+            fontAwesome: "fab fa-python"
         },
         {
-            title: "Unity",
+            name: "Unity",
             logo: require("./assets/images/skillLogos/unityLogo.png"),
-            fontAwesome: ""
+            fontAwesome: "fab fa-unity"
         },
         {
-            title: "Unreal",
+            name: "Unreal",
             logo: require("./assets/images/skillLogos/unrealLogo.png"),
             fontAwesome: ""
         }

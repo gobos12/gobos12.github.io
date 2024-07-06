@@ -8,15 +8,20 @@
 .skills-icons {
   list-style: none;
   text-align: center;
-  padding-left: 0;
-
 }
 
 .skills-inline {
   display: inline-block;
-  margin: 0 40px 20px 0;
+  margin-right: 50px;
 }
 
-.skills-inline > i {
-  color: $textColor;
+.skills-inline > img {
+  margin: 0 1rem 0 2rem;
+  object-fit: contain;
+  width: 5rem;
+  height: 5rem;
+}
+
+.skills-inline > p {
+  text-align: center;
 }

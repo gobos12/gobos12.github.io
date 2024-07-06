@@ -10,13 +10,14 @@ export default function SkillsCard({card}){
             <div className="skills-card">
                 <ul className="skill-icons">
                     {
-                        skills.skills.map((skills, i) => {
+                        skills.softwareSkills.map((skill, i) => {
                             return (
-                                <li key={i} className="skills-inline" title={skills.title}>
-
-                                </li>);
-                        })
-                    }
+                                <li key={i} className="skills-inline" title={skill.name}>
+                                    <img ref={imgRef} className="skills-img" src={skill.logo} alt={skill.name}/>
+                                    <p>{skill.name}</p>
+                                </li>
+                            );
+                        })}
                 </ul>
             </div>
         </div>
