@@ -2,26 +2,26 @@
 
 // box transition
 .edu-border {
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px $shadowBefore;
-  transition: all 0.3s ease-in-out;
+  //position: relative;
+  //border-radius: 5px;
+  //box-shadow: 0 1px 2px $shadowBefore;
+  //transition: all 0.3s ease-in-out;
 }
 
 .edu-border::after{
-  position: absolute;
-  opacity: 0;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px $shadowAfter;
-  transition: opacity 0.3s ease-in-out;
+  //position: absolute;
+  //opacity: 0;
+  //border-radius: 5px;
+  //box-shadow: 0 5px 15px $shadowAfter;
+  //transition: opacity 0.3s ease-in-out;
 }
 
 .edu-border:hover {
-  transform: scale(1.1, 1.1);
+ // transform: scale(1.1, 1.1);
 }
 
 .edu-border:hover::after {
-  opacity: 1;
+  //opacity: 1;
 }
 
 // logo

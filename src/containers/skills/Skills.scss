@@ -6,11 +6,12 @@
 
 .skills-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow-wrap: anywhere;
     width: 90%;
     padding: 20px 10px;
     margin: 2rem auto 0;
+    line-height: 1.1;
 }
 
 .skills-section > * {
@@ -26,15 +27,16 @@
 .skills-subTitle {
     font-size: 25px;
     margin-left: 2rem;
+    margin-top: 0;
 }
 
 .skills-card {
-    //margin-left: 2rem;
+    display: flex;
 }
 
 @media (max-width: $desktop-width){
     .skills-title{
-        font-size: 40px;
+
     }
 }
 
@@ -43,7 +45,22 @@
         flex-direction: column;
     }
 
+    .skills-text {
+        text-align: center;
+    }
+
     .skills-title{
         font-size: 30px;
+    }
+
+    .skills-subTitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: $phone-width)
+{
+    .skills-card {
+
     }
 }

@@ -14,13 +14,10 @@ export default function Skills()
                 <div className="skills-section">
                     <div className="skills-text">
                         <h1 className="skills-title">{skills.title}</h1>
-                        <p className="skills-subTitle">{skills.subTitle}</p>
                     </div>
                     <div className="skills-card">
-                        <SkillsCard />
-                        {/*{skills.skills.map((skill, i) =>*/}
-                        {/*    <SkillsCard key={i} skill={skill}/>*/}
-                        {/*)}*/}
+                        <p className="skills-subTitle">{skills.softwareTitle}</p>
+                        <SkillsCard/>
                     </div>
                 </div>
             </Fade>

@@ -9,11 +9,11 @@ export default function Greeting()
 
     return (
         <Fade bottom duration={1000} distance={"40px"}>
-            <h1 className="greet-title">{greeting.title}</h1>
+            <h1 className="greet-title">{greeting.name}</h1>
             <div className="greet-section" id="greeting">
-                <div className="greet-gif">
-                    <img src={greeting.logo} alt="Idle Robot" width="500" height="550"/>
-                </div>
+                {/*<div className="greet-gif">*/}
+                {/*    <img src={greeting.logo} alt="Idle Robot" width="500" height="550"/>*/}
+                {/*</div>*/}
                 <div className="greet-text">
                     <p className="greet-subTitle">{greeting.subTitle}</p>
                     <div className="greet-buttons">

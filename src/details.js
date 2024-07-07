@@ -1,6 +1,6 @@
 const greeting = {
     username: "Orion Dobos",
-    title: "Orion Dobos",
+    name: "Orion Dobos",
     logo: require("./assets/images/roboSit.gif"),
     subTitle: "Game Developer and Computer Engineer",
     display: true
@@ -8,7 +8,7 @@ const greeting = {
 
 const skills = {
     title: "Skills",
-    subTitle: "Some of my skills!",
+    softwareTitle: "Technical Skills",
     softwareSkills: [
         {
             name: "HTML5",
@@ -45,13 +45,13 @@ const skills = {
 };
 
 const experience = {
-    title: "Experience",
+    header: "Experience",
     experience: [
         {
             title: "Extended Reality Creative Developer",
-            subTitle: "Meteor Studio",
+            company: "Meteor Studio",
             logo: require("./assets/images/MeteorStudioLogo2018.png"),
-            date: "June 2022 - Present",
+            duration: "June 2022 - Present",
             description: "",
             link: "https://meteor.ame.asu.edu/",
             bullets: [
@@ -66,9 +66,9 @@ const experience = {
         },
         {
             title: "Teachers Assistant",
-            subTitle: "Ira A. Fulton Fulton Schools of Engineering",
+            company: "Ira A. Fulton Fulton Schools of Engineering",
             logo: require("./assets/images/fultonLogo.png"),
-            date: "August 2022 - May 2024",
+            duration: "August 2022 - May 2024",
             description: "",
             bullets: [
                 "Aided students in programming and debugging their projects in Gamemaker Studio and the \n" +
@@ -80,9 +80,9 @@ const experience = {
         },
         {
             title: "SCAI Mentor",
-            subTitle: "SCAI Academic Advising Office",
+            company: "SCAI Academic Advising Office",
             logo: require("./assets/images/fultonLogo.png"),
-            date: "May 2022 - December 2023",
+            duration: "May 2022 - December 2023",
             description: "",
             bullets: [
                 "Worked with incoming and current freshman SCAI students to help ease them into their first \n" +
@@ -97,12 +97,32 @@ const experience = {
 };
 
 const projects = {
-    title: "Professional Projects",
+    header: "Professional Projects",
     projects: [
         {
-            title: "",
+            title: "Planetary Parfait",
+            sponsor: "Meteor Studio",
             logo: "",
-            description: "",
+            description: "A software tool intended for scientist and researchers to view geospatial data within a three-dimensional context.",
+            bullets: [
+
+            ]
+        },
+        {
+            title: "Haptic Media Controller",
+            sponsor: "Systems Capstone Project",
+            logo: "",
+            description: "A haptic device that controls media playback and user interface within the virtual reality experiences of Dreamscape Learn.",
+            bullets: [
+
+            ]
+        },
+        {
+            title: "Dwarves in the Dark",
+            sponsor: "Game Capstone Project",
+            logo: "",
+            description: "A multiplayer hack-and-slash where players traverse vast cave systems \n" +
+                "and engage in interesting conversation with NPCs powered by OpenAI. ",
             bullets: [
 
             ]
@@ -117,14 +137,13 @@ const github = {
 }
 
 const education = {
-    title: "Education",
+    header: "Education",
     schools: [
         {
-            title: "Arizona State University",
-            subTitle: "Bachelor of Science in Engineering in Computer Systems Engineering",
+            school: "Arizona State University",
+            degree: "Bachelor of Science in Engineering in Computer Systems Engineering",
             logo: require("./assets/images/asuLogo.png"),
-            date: "August 2020 - May 2024",
-            description: "3.89 / 4.00"
+            duration: "August 2020 - May 2024"
         }
     ],
 
@@ -132,11 +151,11 @@ const education = {
 };
 
 const certs = {
-    title: "Certifications",
+    header: "Certifications",
     certs: [
         {
             title: "",
-            subTitle: "", // where it came from
+            sponsor: "", // where it came from
             logo: "",
             date: "",
             description: ""  // link to distributor (if there is one

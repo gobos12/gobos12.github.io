@@ -1,128 +1,102 @@
 @import "../../utils/constants";
 
 .headroom-wrapper {
-    max-height: 100px;
+    max-height: 150px;
 }
 
 .header {
-    background-color: $headerColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 100%;
-    padding: 15px 20px;
+    padding: 20px 20px;
     margin: 0 auto;
+    background-color: $headerColor;
 }
 
 .header ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    overflow: hidden;
+}
+
+.header li {
+    float: left;
 }
 
 .header li a {
-    display: block;
-    padding: 15px 20px;
+    display: inline-block;
+    padding: 20px 20px;
     color: $headerText;
     text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu_btn:hover {
-    background-color: $buttonHover;
 }
 
 .header .logo {
-    display: block;
-    flex: none;
+    display: inline-flex;
     float: left;
-    font-size: 1.5em;
-    text-decoration: none;
-    margin-top: 10px;
     line-height: normal;
+    text-decoration: none;
 }
 
-.header .logo-name {
+.header .logo > h1 {
     font-family: monospace;
-    font-weight: bold;
     color: $headerText;
-    font-variant-ligatures: no-common-ligatures;
-    padding: 0 10px;
+    text-align: center;
 }
 
 .header .menu {
     clear: both;
-    max-height: 0;
+    max-height: none;
     transition: max-height 0.2s ease-out;
 }
 
-.header .menu-icon {
+.header button {
+    background: $headerColor;
+    border: none;
     cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
 }
 
-.header .menu-icon .navicon {
-    background: $bgColor01;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background 0.2s ease-out;
-    width: 18px;
+.header button:hover {
+
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-    background: $bgColor01;
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    width: 100%;
-}
-
-.header .menu-btn {
+.header i {
     display: none;
+    float: right;
+    font-size: 40px;
+    color: $headerText;
 }
 
-.header .menu_btn:checked ~ .menu {
-    max-height: 486px;
+.card {
+    //display: none;
 }
 
-.header .menu_btn:checked ~ .menu-icon .navicon {
-    background-color: transparent !important;
+@media (max-width: $desktop-width){
+
 }
 
-.header .menu_btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-}
-
-.header .menu_btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-}
-
-@media (min-width: 48em){
-    .header li{
-        float: left;
+@media (max-width: $tablet-width)  {
+    .headroom-wrapper {
+        max-height: 100px;
     }
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .header .menu {
-        max-height: none;
-    }
-    .header .menu-icon {
+
+    .header .logo > h1 {
         display: none;
     }
+
+    .header li {
+        display: none;
+    }
+
+    .header i {
+        display: inline;
+    }
 }
 
-@media (max-width: 960px) and (min-width: 768px) {
-    .header {
-        font-size: 12px;
+@media (max-width: $phone-width)
+{
+    .header .logo {
+        line-height: unset;
     }
 }
 

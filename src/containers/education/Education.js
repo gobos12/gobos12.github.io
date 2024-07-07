@@ -10,16 +10,14 @@ export default function Education()
     if (!education.display) return null;
 
     return (
-      <div className="edu" id="edu">
+      <div className="edu-border" id="edu">
           <Fade bottom duration={1000} distance="20px">
               <div className="edu-section">
-                  <div className="edu-title">
-                      <h1>{education.title}</h1>
-                  </div>
+                  <h1 className="edu-title">{education.header}</h1>
                   <div className="edu-card">
-                  {education.schools.map((school, index) => (
-                          <Card key={index} card={school}/>
-                      ))}
+                      {/*{education.schools.map((school, index) => (*/}
+                      {/*        <Card key={index} card={school}/>*/}
+                      {/*    ))}*/}
                   </div>
               </div>
           </Fade>

@@ -1,14 +1,18 @@
 @import "./../../utils/constants";
 
-.edu {
-  background-color: $bgColor01;
+.edu-border {
+  position: relative;
+  border-radius: 2rem;
+  margin: 1rem;
+  box-shadow: 0 1px 2px $shadowBefore;
+  background-color: $bgColor02;
 }
 
 .edu-section {
   display: flex;
   flex-direction: row;
   width: 90%;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 2rem auto 0;
 }
 
@@ -17,8 +21,8 @@
   margin-bottom: 30px;
 }
 
-.edu-title > h1{
-  font-size: 50px;
+.edu-section > h1{
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -29,9 +33,7 @@
 }
 
 @media (max-width: $desktop-width){
-  .edu-title > h1{
-    font-size: 40px;
-  }
+
 }
 
 @media (max-width: $tablet-width){
@@ -39,7 +41,7 @@
     flex-direction: column;
   }
 
-  .edu-title > h1{
+  .edu-section > h1{
     font-size: 30px;
     text-align: center;
   }
@@ -47,4 +49,9 @@
   .edu-card {
     padding-left: 1rem;
   }
+}
+
+@media (max-width: $phone-width)
+{
+
 }

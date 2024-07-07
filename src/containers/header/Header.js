@@ -7,6 +7,7 @@ import {
     projects,
     education
 } from "../../details";
+import HeaderCard from "../../components/headerCard/HeaderCard";
 import "./Header.scss";
 
 function Header()
@@ -20,18 +21,18 @@ function Header()
         <Headroom>
             <header className="header">
                 <a href="/" className="logo">
-                    <span className="logo-name">{greeting.username}</span>
+                    <img src={greeting.logo} alt="Idle Robot" width="110" height="100"/>
+                    <h1>{greeting.username}</h1>
                 </a>
-                <input className="menu-btn" type="checkbox" id="menu-btn"/>
-                <label className="menu-icon" htmlFor="menu-btn" style={{color:"white"}}>
-                    <span className="navicon"></span>
-                </label>
                 <ul className="menu">
+                    <button className="header-button" type="button">
+                        <i className="fa-solid fa-bars"></i>
+                    </button>
                     {
-                        viewSkills && (
-                        <li>
-                            <a href="#skills">Skills</a>
-                        </li>
+                    viewSkills && (
+                            <li>
+                                <a href="#skills">Skills</a>
+                            </li>
                         )
                     }
                     {
@@ -57,6 +58,9 @@ function Header()
                     }
                 </ul>
             </header>
+            <div className="card">
+                <HeaderCard />
+            </div>
         </Headroom>
     );
 }

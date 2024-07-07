@@ -8,15 +8,15 @@
 .skills-icons {
   list-style: none;
   text-align: center;
+  margin: 0 1rem 0 1rem;
 }
 
 .skills-inline {
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 65px;
 }
 
 .skills-inline > img {
-  margin: 0 1rem 0 2rem;
   object-fit: contain;
   width: 5rem;
   height: 5rem;
@@ -24,4 +24,11 @@
 
 .skills-inline > p {
   text-align: center;
+}
+
+@media (max-width: $phone-width)
+{
+  .skills-inline {
+    margin-right: 2rem;
+  }
 }

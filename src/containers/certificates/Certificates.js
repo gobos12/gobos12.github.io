@@ -7,12 +7,10 @@ export default function Certificate() {
     if(!certs.display) return null;
 
     return (
-        <div className="cert" id="cert">
+        <div className="cert-border" id="cert">
             <Fade bottom duration={1000} distance="20px">
                 <div className="cert-section">
-                    <div className="cert-title">
-                        <h1>{certs.title}</h1>
-                    </div>
+                    <h1 className="cert-title">{certs.header}</h1>
                 </div>
             </Fade>
         </div>

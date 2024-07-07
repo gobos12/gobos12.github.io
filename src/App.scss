@@ -1,5 +1,25 @@
+@import "./utils/constants";
+
 .App {
   font-family: "Roboto Regular", monospace;
+}
+
+.App-Sections {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-Sections > * {
+
+}
+
+.App-Left {
+  position: relative;
+}
+
+.App-Right {
+  position: relative;
 }
 
 .App-header {
@@ -11,4 +31,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@media (max-width: $tablet-width)
+{
+  .App-Sections {
+    flex-direction: column;
+  }
 }

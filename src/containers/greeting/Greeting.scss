@@ -13,14 +13,6 @@
     margin-bottom: 30px;
 }
 
-.greet-text {
-    position: relative;
-    font-size: 70px;
-    line-height: 1.1;
-    text-align: right;
-    color: $textColor !important;
-}
-
 .greet-title {
     text-align: center;
     font-size: 70px;
@@ -28,10 +20,16 @@
     color: $titleColor !important;
 }
 
+.greet-text {
+    position: relative;
+    font-size: 70px;
+    line-height: 1.1;
+    text-align: center;
+    color: $textColor !important;
+}
+
 .greet-subTitle {
-    position: absolute;
-    top: 50%;
-    margin: -20px 0 0 0;
+    margin: -30px 0 0 20px;
     font-size: 40px;
     color: $subTitleColor !important;
 }
@@ -54,5 +52,15 @@
 
     .greet-text {
         text-align: center;
+    }
+}
+
+@media (max-width: $phone-width)
+{
+    .greet-title {
+        font-size: 60px;
+    }
+    .greet-subTitle {
+        font-size: 35px;
     }
 }

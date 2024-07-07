@@ -1,0 +1,12 @@
+@import "./../../utils/constants";
+
+.header-card {
+  display: none;
+  max-width: 100%;
+  background: blue;
+}
+
+.header-panel {
+  flex-shrink: 0;
+  height: 100px;
+}
