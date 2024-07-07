@@ -9,11 +9,10 @@
 }
 
 .edu-section {
-  display: flex;
   flex-direction: row;
   width: 90%;
   padding: 10px 10px;
-  margin: 2rem auto 0;
+  margin: auto;
 }
 
 .edu-section > * {
@@ -24,6 +23,7 @@
 .edu-section > h1{
   font-size: 40px;
   font-weight: 400;
+  text-align: center;
 }
 
 .edu-card {
@@ -43,7 +43,6 @@
 
   .edu-section > h1{
     font-size: 30px;
-    text-align: center;
   }
 
   .edu-card {

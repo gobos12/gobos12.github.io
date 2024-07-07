@@ -1,12 +1,30 @@
 @import "./../../utils/constants";
 
 .header-card {
-  display: none;
-  max-width: 100%;
-  background: blue;
+
 }
 
 .header-panel {
-  flex-shrink: 0;
-  height: 100px;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.header-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-panel li a {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 20px;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+
+  text-decoration: none;
+  text-align: center;
+
+  color: $textColor;
+  background: darkolivegreen;
 }

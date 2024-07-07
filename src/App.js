@@ -13,14 +13,11 @@ function App() {
         <Header />
         <Greeting />
         <div className="App-Sections">
-            <div className="App-Left">
-                <Experience />
-                <Projects />
-            </div>
-            <div className="App-Right">
-                <Education />
-                <Certificate />
-            </div>
+            <Experience />
+            <Education />
+            <Projects />
+            <Certificate />
+            <Skills />
         </div>
     </div>
   );

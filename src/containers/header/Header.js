@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Headroom from "react-headroom";
+import { Button } from "reactstrap";
 import {
     greeting,
     skills,
     experience,
     projects,
-    education
+    education,
+    certs
 } from "../../details";
 import HeaderCard from "../../components/headerCard/HeaderCard";
 import "./Header.scss";
@@ -16,6 +18,9 @@ function Header()
     const viewWork = experience.display;
     const viewProjects = projects.display;
     const viewEdu = education.display;
+    const viewCerts = certs.display;
+
+    const [isOpen, setOpen] = useState(false);
 
     return(
         <Headroom>
@@ -25,13 +30,15 @@ function Header()
                     <h1>{greeting.username}</h1>
                 </a>
                 <ul className="menu">
-                    <button className="header-button" type="button">
+                    <Button
+                        onClick={isOpen ? () => setOpen(false) : () => setOpen(true)}
+                    >
                         <i className="fa-solid fa-bars"></i>
-                    </button>
+                    </Button>
                     {
-                    viewSkills && (
+                        viewWork && (
                             <li>
-                                <a href="#skills">Skills</a>
+                                <a href="#exp">Experience</a>
                             </li>
                         )
                     }
@@ -43,22 +50,29 @@ function Header()
                         )
                     }
                     {
-                        viewWork && (
-                            <li>
-                                <a href="#exp">Experience</a>
-                            </li>
-                        )
-                    }
-                    {
                         viewProjects && (
                             <li>
                                 <a href="#projects">Projects</a>
                             </li>
                         )
                     }
+                    {
+                        viewCerts && (
+                            <li>
+                                <a href="#cert">Certifications</a>
+                            </li>
+                        )
+                    }
+                    {
+                        viewSkills && (
+                            <li>
+                                <a href="#skills">Skills</a>
+                            </li>
+                        )
+                    }
                 </ul>
             </header>
-            <div className="card">
+            <div className={isOpen ? "card-open" : "card-close"}>
                 <HeaderCard />
             </div>
         </Headroom>

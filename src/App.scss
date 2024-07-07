@@ -5,21 +5,11 @@
 }
 
 .App-Sections {
-  position: absolute;
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
 
-.App-Sections > * {
-
-}
-
-.App-Left {
-  position: relative;
-}
-
-.App-Right {
-  position: relative;
 }
 
 .App-header {
