@@ -1,26 +1,22 @@
-// text colors
+// general
 $textColor: #000000;
-$titleColor: #000000;
-$subTitleColor: #605F5E;
-
 $bgColor01: #EDEBD7;
 $bgColor02: #F5F1ED;
+
+// greeting
+$titleColor: #000000;
+$subTitleColor: #605F5E;
 
 // header
 $headerColor: #E3B23C;
 $headerText: #000000;
-
-// buttons
-$buttonColor: #FEFFFE;
-$buttonHover: #BAD4AA;
-$buttonClick: #E2E2E2;
+$headerHover: #ffffff;
 
 // shadow-box transition colors
 $shadowBefore: rgba(0, 0, 0, 0.5);
 $shadowAfter: rgba(0, 0, 0, 1);
 
 // media query sizes
-
 $desktop-width: 1024px;
 $tablet-width: 768px;
 $phone-width: 640px;

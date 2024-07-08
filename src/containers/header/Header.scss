@@ -1,36 +1,18 @@
 @import "../../utils/constants";
 
 .headroom-wrapper {
-    max-height: 150px;
+    max-height: 140px;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
     padding: 20px 20px;
-    margin: 0 auto;
     background-color: $headerColor;
 }
 
-.header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.header li {
-    float: left;
-}
-
-.header li a {
-    display: inline-block;
-    padding: 20px 20px;
-    color: $headerText;
-    text-decoration: none;
-    font-size: 25px;
-}
+// --------------------- Logo  ------------------------
 
 .header .logo {
     display: inline-flex;
@@ -41,59 +23,45 @@
 
 .header .logo > h1 {
     font-family: monospace;
+    font-size: 35px;
     color: $headerText;
     text-align: center;
 }
 
-.header .menu {
-    clear: both;
-    max-height: none;
-    transition: max-height 0.2s ease-out;
-}
+// ----------------------------------------------------
+
+// ---------------- Hamburger Menu  -------------------
 
 .header button {
     background: $headerColor;
+    display: none;
     border: none;
     cursor: pointer;
 }
 
-.header button:hover {
-
-}
-
 .header i {
-    display: none;
-    float: right;
     font-size: 40px;
     color: $headerText;
+    transition: all 0.3s ease-in-out;
 }
 
-.card-open {
-    display: initial;
+.header i:hover {
+    transform: scale(1.1, 1.1);
 }
 
-.card-close {
-    display: none;
-}
-
-@media (max-width: $desktop-width){
-
-}
+// ----------------------------------------------------
 
 @media (max-width: $tablet-width)  {
-    .headroom-wrapper {
-        max-height: 100px;
+
+    .header {
+        z-index: 1; //stays on top
     }
 
     .header .logo > h1 {
         display: none;
     }
 
-    .header li {
-        display: none;
-    }
-
-    .header i {
+    .header button {
         display: inline;
     }
 }

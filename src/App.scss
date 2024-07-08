@@ -7,7 +7,7 @@
 .App-Sections {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 85%;
   margin: auto;
 
 }
@@ -26,6 +26,13 @@
 @media (max-width: $tablet-width)
 {
   .App-Sections {
-    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: $phone-width)
+{
+  .App-Sections {
+    width: 95%;
   }
 }

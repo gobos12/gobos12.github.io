@@ -1,63 +1,49 @@
-import React from "react";
-import {
-    skills,
-    experience,
-    projects,
-    education,
-    certs
-} from "../../details";
+import React, { Component } from "react";
 import "./HeaderCard.scss";
-import {Button} from "reactstrap";
+import {certs, education, experience, projects, skills} from "../../details";
 
 export default function HeaderCard()
 {
-    const viewSkills = skills.display;
-    const viewWork = experience.display;
-    const viewProjects = projects.display;
-    const viewEdu = education.display;
-    const viewCerts = certs.display;
 
     return(
         <div className="header-card" id="header-card">
-            <div className="header-panel">
-                <ul className="menu">
-                    {
-                        viewWork && (
-                            <li>
-                                <a href="#exp">Experience</a>
-                            </li>
-                        )
-                    }
-                    {
-                        viewEdu && (
-                            <li>
-                                <a href="#edu">Education</a>
-                            </li>
-                        )
-                    }
-                    {
-                        viewProjects && (
-                            <li>
-                                <a href="#projects">Projects</a>
-                            </li>
-                        )
-                    }
-                    {
-                        viewCerts && (
-                            <li>
-                                <a href="#cert">Certifications</a>
-                            </li>
-                        )
-                    }
-                    {
-                        viewSkills && (
-                            <li>
-                                <a href="#skills">Skills</a>
-                            </li>
-                        )
-                    }
-                </ul>
-            </div>
+            <ul className="menu">
+                {
+                    experience.display && (
+                        <li>
+                            <a href="#exp">Experience</a>
+                        </li>
+                    )
+                }
+                {
+                    education.display && (
+                        <li>
+                            <a href="#edu">Education</a>
+                        </li>
+                    )
+                }
+                {
+                    projects.display && (
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                    )
+                }
+                {
+                    certs.display && (
+                        <li>
+                            <a href="#cert">Certifications</a>
+                        </li>
+                    )
+                }
+                {
+                    skills.display && (
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                    )
+                }
+            </ul>
         </div>
     );
 }

@@ -1,7 +1,6 @@
 @import "./../../utils/constants";
 
 .edu-border {
-  position: relative;
   border-radius: 2rem;
   margin: 1rem;
   box-shadow: 0 1px 2px $shadowBefore;
@@ -9,7 +8,6 @@
 }
 
 .edu-section {
-  flex-direction: row;
   width: 90%;
   padding: 10px 10px;
   margin: auto;
@@ -26,10 +24,8 @@
   text-align: center;
 }
 
-.edu-card {
-  display: flex;
-  padding-top: 20px;
-  padding-left: 3rem;
+.edu-card-list {
+
 }
 
 @media (max-width: $desktop-width){

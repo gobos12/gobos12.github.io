@@ -1,8 +1,8 @@
 import React from "react";
-import "./Projects.scss";
 import {Fade} from "react-reveal";
 import {projects} from "../../details";
-import Card from "../../components/card/Card";
+import ProjectCard from "../../components/projectCard/ProjectCard";
+import "./Projects.scss";
 
 export default function Projects()
 {
@@ -13,10 +13,12 @@ export default function Projects()
             <Fade bottom duration={1000} distance="20px">
                 <div className="projects-section">
                     <h1 className="projects-title">{projects.header}</h1>
-                    <div className="projects-card">
-                        {/*{projects.projects.map((card, i) => (*/}
-                        {/*    <Card key={i} card={card}/>*/}
-                        {/*))}*/}
+                    <div className="projects-card-list">
+                        {
+                            projects.projects.map((card, i) => (
+                               <ProjectCard key={i} card={card} />
+                            ))
+                        }
                     </div>
                 </div>
             </Fade>

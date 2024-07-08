@@ -1,9 +1,8 @@
 import React from "react";
-import "./Experience.scss";
 import {Fade} from "react-reveal";
 import {experience} from "../../details";
-import ExpCard from "../../components/_legacy/expCard/ExpCard";
-import Card from "./../../components/card/Card";
+import ExpCard from "../../components/expCard/ExpCard";
+import "./Experience.scss";
 
 export default function Experience()
 {
@@ -14,10 +13,12 @@ export default function Experience()
           <Fade bottom duration={1000} distance="20px">
               <div className="exp-section">
                   <h1 className="exp-title">{experience.header}</h1>
-                  <div className="exp-card">
-                      {experience.experience.map((card, i) => (
-                          <Card key={i} card={card}/>
-                      ))}
+                  <div className="exp-card-list">
+                      {
+                          experience.experience.map((card, i) => (
+                              <ExpCard key={i} card={card} />
+                          ))
+                      }
                   </div>
               </div>
           </Fade>

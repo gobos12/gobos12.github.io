@@ -13,9 +13,9 @@ function App() {
         <Header />
         <Greeting />
         <div className="App-Sections">
+            <Projects />
             <Experience />
             <Education />
-            <Projects />
             <Certificate />
             <Skills />
         </div>

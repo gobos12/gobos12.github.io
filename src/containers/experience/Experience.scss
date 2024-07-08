@@ -1,7 +1,6 @@
 @import "./../../utils/constants";
 
 .exp-border {
-  position: relative;
   border-radius: 2rem;
   margin: 1rem;
   box-shadow: 0 1px 2px $shadowBefore;
@@ -9,7 +8,6 @@
 }
 
 .exp-section {
-  flex-direction: row;
   width: 90%;
   padding: 10px 10px;
   margin: auto;
@@ -22,33 +20,17 @@
 
 .exp-section > h1{
   font-size: 40px;
-  font-weight: 400;
+  font-weight: normal;
   text-align: center;
 }
 
-.exp-card {
-  display: flex;
-  padding-top: 20px;
-  padding-left: 3rem;
-}
+.exp-card-list {
 
-@media (max-width: $desktop-width) {
-  .exp-section > h1{
-    font-size: 40px;
-  }
 }
 
 @media (max-width: $tablet-width) {
-  .exp-section {
-    flex-direction: column;
-  }
-
   .exp-section > h1{
     font-size: 30px;
-  }
-
-  .exp-card {
-    padding-left: 1rem;
   }
 }
 

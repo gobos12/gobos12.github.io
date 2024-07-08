@@ -1,0 +1,80 @@
+@import "../../utils/constants";
+
+.exp-card {
+  display: flex;
+  justify-content: normal;
+}
+
+.exp-card-button {
+  color: $textColor;
+  text-decoration: none;
+  align-content: center;
+}
+
+.exp-card-img {
+  object-fit: contain;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1rem;
+}
+
+.exp-card-text {
+  line-height: 1.1;
+}
+
+.exp-card-title {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.exp-card-subtitle {
+  font-size: 25px;
+  margin: 1rem 0 0.5rem 1.5rem;
+}
+
+.exp-card-details > * {
+  font-size: 20px;
+  margin: 1rem 0 0.5rem 1.5rem;
+}
+
+.exp-bullets {
+  line-height: 1.2;
+}
+
+@media (max-width: $tablet-width)
+{
+  .exp-card-button {
+    display: none;
+  }
+
+  .exp-card-title {
+    font-size: 25px;
+  }
+
+  .exp-card-subtitle {
+    font-size: 20px;
+  }
+
+  .exp-card-details > * {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: $phone-width)
+{
+  .exp-card-button {
+    display: none;
+  }
+
+  .exp-card-title {
+
+  }
+
+  .exp-card-subtitle {
+
+  }
+
+  .exp-card-details {
+
+  }
+}

@@ -13,14 +13,13 @@
 
 .greet-title {
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1.1;
     color: $titleColor !important;
 }
 
 .greet-text {
     position: relative;
-    font-size: 70px;
     line-height: 1.1;
     text-align: center;
     color: $textColor !important;
@@ -28,7 +27,7 @@
 
 .greet-subTitle {
     margin: -30px 0 0 20px;
-    font-size: 40px;
+    font-size: 35px;
     color: $subTitleColor !important;
 }
 
@@ -52,12 +51,16 @@
     .greet-text {
         text-align: center;
     }
+
+    .greet-subTitle {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: $phone-width)
 {
     .greet-title {
-        font-size: 60px;
+        font-size: 50px;
     }
     .greet-subTitle {
         font-size: 35px;

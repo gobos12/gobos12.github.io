@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, {useState} from "react";
 import Headroom from "react-headroom";
 import { Button } from "reactstrap";
 import {
@@ -12,15 +12,27 @@ import {
 import HeaderCard from "../../components/headerCard/HeaderCard";
 import "./Header.scss";
 
+function openMenu() {
+
+}
+
+function closeMenu() {
+
+}
+
 function Header()
 {
-    const viewSkills = skills.display;
-    const viewWork = experience.display;
-    const viewProjects = projects.display;
-    const viewEdu = education.display;
-    const viewCerts = certs.display;
-
     const [isOpen, setOpen] = useState(false);
+
+    const handleClick = () => {
+        if (isOpen) {
+            document.getElementById("header-card").style.width = "0"; // close menu
+            setOpen(false);
+        } else {
+            document.getElementById("header-card").style.width = "250px"; //open menu
+            setOpen(true);
+        }
+    };
 
     return(
         <Headroom>
@@ -29,52 +41,11 @@ function Header()
                     <img src={greeting.logo} alt="Idle Robot" width="110" height="100"/>
                     <h1>{greeting.username}</h1>
                 </a>
-                <ul className="menu">
-                    <Button
-                        onClick={isOpen ? () => setOpen(false) : () => setOpen(true)}
-                    >
-                        <i className="fa-solid fa-bars"></i>
-                    </Button>
-                    {
-                        viewWork && (
-                            <li>
-                                <a href="#exp">Experience</a>
-                            </li>
-                        )
-                    }
-                    {
-                        viewEdu && (
-                            <li>
-                                <a href="#edu">Education</a>
-                            </li>
-                        )
-                    }
-                    {
-                        viewProjects && (
-                            <li>
-                                <a href="#projects">Projects</a>
-                            </li>
-                        )
-                    }
-                    {
-                        viewCerts && (
-                            <li>
-                                <a href="#cert">Certifications</a>
-                            </li>
-                        )
-                    }
-                    {
-                        viewSkills && (
-                            <li>
-                                <a href="#skills">Skills</a>
-                            </li>
-                        )
-                    }
-                </ul>
-            </header>
-            <div className={isOpen ? "card-open" : "card-close"}>
+                <Button className="header-button" onClick={handleClick}>
+                    <i className="fa-solid fa-bars"></i>
+                </Button>
                 <HeaderCard />
-            </div>
+            </header>
         </Headroom>
     );
 }

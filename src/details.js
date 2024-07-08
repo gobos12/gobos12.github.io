@@ -12,32 +12,32 @@ const skills = {
     softwareSkills: [
         {
             name: "HTML5",
-            logo: require("./assets/images/skillLogos/htmlLogo.png"),
+            logo: require("./assets/images/logos/htmlLogo.png"),
             fontAwesome: "fab fa-html5"
         },
         {
             name: "C++",
-            logo: require("./assets/images/skillLogos/cppLogo.png"),
+            logo: require("./assets/images/logos/cppLogo.png"),
             fontAwesome: ""
         },
         {
             name: "C#",
-            logo: require("./assets/images/skillLogos/csharpLogo.png"),
+            logo: require("./assets/images/logos/csharpLogo.png"),
             fontAwesome: ""
         },
         {
             name: "Python",
-            logo: require("./assets/images/skillLogos/pythonLogo.png"),
+            logo: require("./assets/images/logos/pythonLogo.png"),
             fontAwesome: "fab fa-python"
         },
         {
             name: "Unity",
-            logo: require("./assets/images/skillLogos/unityLogo.png"),
+            logo: require("./assets/images/logos/unityLogo.png"),
             fontAwesome: "fab fa-unity"
         },
         {
             name: "Unreal",
-            logo: require("./assets/images/skillLogos/unrealLogo.png"),
+            logo: require("./assets/images/logos/unrealLogo.png"),
             fontAwesome: ""
         }
     ],
@@ -50,7 +50,7 @@ const experience = {
         {
             title: "Extended Reality Creative Developer",
             company: "Meteor Studio",
-            logo: require("./assets/images/MeteorStudioLogo2018.png"),
+            logo: require("./assets/images/logos/MeteorStudioLogo2018.png"),
             duration: "June 2022 - Present",
             description: "",
             link: "https://meteor.ame.asu.edu/",
@@ -67,7 +67,7 @@ const experience = {
         {
             title: "Teachers Assistant",
             company: "Ira A. Fulton Fulton Schools of Engineering",
-            logo: require("./assets/images/fultonLogo.png"),
+            logo: require("./assets/images/logos/sunburstLogo.png"),
             duration: "August 2022 - May 2024",
             description: "",
             bullets: [
@@ -81,9 +81,10 @@ const experience = {
         {
             title: "SCAI Mentor",
             company: "SCAI Academic Advising Office",
-            logo: require("./assets/images/fultonLogo.png"),
+            logo: require("./assets/images/logos/fultonLogo.png"),
             duration: "May 2022 - December 2023",
             description: "",
+            link: "https://scai.engineering.asu.edu/scai-mentors/",
             bullets: [
                 "Worked with incoming and current freshman SCAI students to help ease them into their first \n" +
                 "year at ASU.",
@@ -97,7 +98,7 @@ const experience = {
 };
 
 const projects = {
-    header: "Professional Projects",
+    header: "Projects",
     projects: [
         {
             title: "Planetary Parfait",
@@ -142,7 +143,7 @@ const education = {
         {
             school: "Arizona State University",
             degree: "Bachelor of Science in Engineering in Computer Systems Engineering",
-            logo: require("./assets/images/asuLogo.png"),
+            logo: require("./assets/images/logos/asuLogo.png"),
             duration: "August 2020 - May 2024"
         }
     ],
@@ -154,10 +155,17 @@ const certs = {
     header: "Certifications",
     certs: [
         {
-            title: "",
-            sponsor: "", // where it came from
+            title: "Computer Gaming",
+            sponsor: "Arizona State University", // where it came from
             logo: "",
-            date: "",
+            date: "May 6, 2024", //date awarded
+            description: ""  // link to distributor (if there is one
+        },
+        {
+            title: "Symbolic, Cognitive and Linguistic Systems",
+            sponsor: "Arizona State University", // where it came from
+            logo: "",
+            date: "May 6, 2024", //date awarded
             description: ""  // link to distributor (if there is one
         }
     ],
