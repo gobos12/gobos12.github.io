@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.15965136.css",
-    "main.js": "/static/js/main.9e0503f7.js",
+    "main.css": "/static/css/main.797e5650.css",
+    "main.js": "/static/js/main.0ad98674.js",
     "static/js/488.66abddb0.chunk.js": "/static/js/488.66abddb0.chunk.js",
     "static/media/dreamscape-headshot.jpg": "/static/media/dreamscape-headshot.df17d0401847fc856cec.jpg",
     "static/media/roboSit.gif": "/static/media/roboSit.edd6fc36a74e7cc39eb1.gif",
@@ -17,12 +17,12 @@
     "static/media/fultonLogo.png": "/static/media/fultonLogo.739a6130272a477b027a.png",
     "static/media/MeteorStudioLogo2018.png": "/static/media/MeteorStudioLogo2018.0a1956b7a933dff313a8.png",
     "index.html": "/index.html",
-    "main.15965136.css.map": "/static/css/main.15965136.css.map",
-    "main.9e0503f7.js.map": "/static/js/main.9e0503f7.js.map",
+    "main.797e5650.css.map": "/static/css/main.797e5650.css.map",
+    "main.0ad98674.js.map": "/static/js/main.0ad98674.js.map",
     "488.66abddb0.chunk.js.map": "/static/js/488.66abddb0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15965136.css",
-    "static/js/main.9e0503f7.js"
+    "static/css/main.797e5650.css",
+    "static/js/main.0ad98674.js"
   ]
 }
