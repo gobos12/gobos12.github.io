@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.scss";
 import {Fade} from "react-reveal";
-import {skills} from "../../details";
+import {skills} from "../../portfolio";
 import SkillsCard from "../../components/skillsCard/SkillsCard";
 
 export default function Skills()

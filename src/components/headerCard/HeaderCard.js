@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./HeaderCard.scss";
-import {certs, education, experience, projects, skills} from "../../details";
+import {certs, education, experience, projects, skills} from "../../portfolio";
 
 export default function HeaderCard()
 {

@@ -1,5 +1,5 @@
 import React, {createRef} from "react";
-import {skills} from "../../details";
+import {skills} from "../../portfolio";
 import "./SkillsCard.scss";
 
 export default function SkillsCard({card}){

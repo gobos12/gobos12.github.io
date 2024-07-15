@@ -1,7 +1,7 @@
 import React from "react";
 import "./Education.scss";
 import {Fade} from "react-reveal";
-import { education } from "../../details";
+import { education } from "../../portfolio";
 import EduCard from "../../components/eduCard/EduCard";
 
 export default function Education()

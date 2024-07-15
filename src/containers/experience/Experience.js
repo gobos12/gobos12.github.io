@@ -1,6 +1,6 @@
 import React from "react";
 import {Fade} from "react-reveal";
-import {experience} from "../../details";
+import {experience} from "../../portfolio";
 import ExpCard from "../../components/expCard/ExpCard";
 import "./Experience.scss";
 

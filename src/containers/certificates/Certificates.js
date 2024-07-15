@@ -1,6 +1,6 @@
 import React from "react";
 import {Fade} from "react-reveal";
-import {certs} from "../../details";
+import {certs} from "../../portfolio";
 import CertCard from "../../components/certCard/CertCard";
 import "./Certificates.scss";
 

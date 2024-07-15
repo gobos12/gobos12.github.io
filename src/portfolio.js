@@ -1,8 +1,29 @@
 const greeting = {
-    username: "Orion Dobos",
     name: "Orion Dobos",
     logo: require("./assets/images/roboSit.gif"),
-    subTitle: "Game Developer and Computer Engineer",
+    nameLogo: require("./assets/images/name-logo.png"),
+    headshot: require("./assets/images/dreamscape-headshot.jpg"),
+    subtitle: "Game Developer and Computer Engineer",
+    aboutMe: "Hi, I’m Orion! I’m a computer systems engineer and avid game developer. \nI love all things programming, whether it's embedded software development, computer networking, or game dev. ",
+
+    resources: [
+        {
+            name: "Resume",
+            link: "https://drive.google.com/file/d/1Yt7-fISP1QFYDDpBlxm9VXHrk4WSn9aL/view?usp=sharing",
+            logo: "fa-regular fa-file-lines"
+        },
+        {
+            name: "Github",
+            link: "https://github.com/gobos12",
+            logo: "fa-brands fa-github"
+        },
+        {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/in/orion-dobos/",
+            logo: "fa-brands fa-linkedin-in"
+        }
+    ],
+
     display: true
 };
 
@@ -41,7 +62,7 @@ const skills = {
             fontAwesome: ""
         }
     ],
-    display: true
+    display: false
 };
 
 const experience = {
@@ -58,7 +79,7 @@ const experience = {
                 "Lead developer for Planetary Parfait, an award-winning virtual reality application that utilizes \n" +
                 "the Unity Game Engine to build 3D terrains using remote-sensing data from GIS tools.",
                 "Coordinated the Cloud Infrastructure Guild at Meteor Studio, with a focus on upskilling \n" +
-                "students on various cloud systems and architectural solutions to be used for projects in and out \n" +
+                "students on various cloud systems and architectural solutions to be used for prevProjects in and out \n" +
                 "of the lab.",
                 "Implemented multiplayer mechanics for ROAM, an interactive VR experience spanning across \n" +
                 "ASU’s Mountain America Stadium."
@@ -71,7 +92,7 @@ const experience = {
             duration: "August 2022 - May 2024",
             description: "",
             bullets: [
-                "Aided students in programming and debugging their projects in Gamemaker Studio and the \n" +
+                "Aided students in programming and debugging their prevProjects in Gamemaker Studio and the \n" +
                 "Unity Game Engine throughout the semester.",
                 "Led a lecture series on integrating multiplayer systems within a Unity project.",
                 "Created a website that contains class resources for present and future students to utilize in their \n" +
@@ -94,26 +115,18 @@ const experience = {
             ]
         }
     ],
-    display: true
+    display: false
 };
 
 const projects = {
-    header: "Projects",
+    header: "Previous Projects",
     projects: [
-        {
-            title: "Planetary Parfait",
-            sponsor: "Meteor Studio",
-            logo: "",
-            description: "A software tool intended for scientist and researchers to view geospatial data within a three-dimensional context.",
-            bullets: [
-
-            ]
-        },
         {
             title: "Haptic Media Controller",
             sponsor: "Systems Capstone Project",
             logo: "",
-            description: "A haptic device that controls media playback and user interface within the virtual reality experiences of Dreamscape Learn.",
+            role: "Project Lead, Embedded Programming",
+            description: "A haptic device that controls media playback and user interface within virtual reality experiences.",
             bullets: [
 
             ]
@@ -122,6 +135,7 @@ const projects = {
             title: "Dwarves in the Dark",
             sponsor: "Game Capstone Project",
             logo: "",
+            role: "Multiplayer & UI/UX Developer",
             description: "A multiplayer hack-and-slash where players traverse vast cave systems \n" +
                 "and engage in interesting conversation with NPCs powered by OpenAI. ",
             bullets: [
@@ -132,8 +146,29 @@ const projects = {
     display: true
 };
 
-const github = {
-    title: "Personal Projects",
+const currentDev = {
+    header: "On-Going Projects",
+    projects: [
+        {
+            title: "Planetary Parfait",
+            sponsor: "Meteor Studio",
+            logo: "",
+            role: "Lead Developer",
+            description: "A software tool intended for scientist and researchers to view geospatial data within a three-dimensional context."
+        }
+    ],
+    display: true
+}
+
+const gameDev = {
+    title: "Game Development",
+    games: [
+        {
+            name: "",
+            link: "",
+            logo: ""
+        }
+        ],
     display: true
 }
 
@@ -148,7 +183,7 @@ const education = {
         }
     ],
 
-    display: true
+    display: false
 };
 
 const certs = {
@@ -170,12 +205,7 @@ const certs = {
         }
     ],
 
-    display: true
-};
-
-const resume = {
-    title: "Download my resume!",
-    display: true
+    display: false
 };
 
 export {
@@ -184,7 +214,7 @@ export {
     experience,
     projects,
     education,
-    resume,
-    github,
+    gameDev,
+    currentDev,
     certs
 };

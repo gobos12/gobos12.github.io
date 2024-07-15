@@ -1,15 +1,17 @@
 @import "../../utils/constants";
 
 .headroom-wrapper {
-    max-height: 140px;
+    max-height: 100px;
 }
 
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 20px 20px;
-    background-color: $headerColor;
+}
+
+.header > img {
+    margin-left: 2rem;
 }
 
 // --------------------- Logo  ------------------------
@@ -21,55 +23,15 @@
     text-decoration: none;
 }
 
-.header .logo > h1 {
-    font-family: monospace;
-    font-size: 35px;
-    color: $headerText;
-    text-align: center;
-}
-
 // ----------------------------------------------------
 
-// ---------------- Hamburger Menu  -------------------
+@media (max-width: $tablet-width)
+{
 
-.header button {
-    background: $headerColor;
-    display: none;
-    border: none;
-    cursor: pointer;
-}
-
-.header i {
-    font-size: 40px;
-    color: $headerText;
-    transition: all 0.3s ease-in-out;
-}
-
-.header i:hover {
-    transform: scale(1.1, 1.1);
-}
-
-// ----------------------------------------------------
-
-@media (max-width: $tablet-width)  {
-
-    .header {
-        z-index: 1; //stays on top
-    }
-
-    .header .logo > h1 {
-        display: none;
-    }
-
-    .header button {
-        display: inline;
-    }
 }
 
 @media (max-width: $phone-width)
 {
-    .header .logo {
-        line-height: unset;
-    }
+
 }
 

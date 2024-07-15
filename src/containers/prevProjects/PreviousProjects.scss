@@ -8,23 +8,29 @@
   background-color: $bgColor02;
 }
 
-.projects-section {
-  flex-direction: column;
-  width: 90%;
-  padding: 10px 10px;
-  margin: auto;
+.project-section {
+
 }
 
-.projects-section > * {
+.project-section > * {
   flex: 1;
   margin-bottom: 30px;
 }
 
-.projects-title {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 1.1;
+.project-section > h1 {
   text-align: center;
+  font-size: 25px;
+  margin: 1rem;
+  font-weight: normal;
+  padding: 20px 20px;
+  color: $titleColor !important;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: $desktop-width) {
@@ -32,8 +38,5 @@
 }
 
 @media (max-width: $tablet-width) {
-  .projects-title {
-    font-size: 30px;
-    text-align: center;
-  }
+
 }
