@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.e32f513e.css",
-    "main.js": "/static/js/main.b30767e4.js",
+    "main.css": "/static/css/main.b1986779.css",
+    "main.js": "/static/js/main.c8729e50.js",
     "static/js/488.66abddb0.chunk.js": "/static/js/488.66abddb0.chunk.js",
+    "static/media/dreamscape-headshot.jpg": "/static/media/dreamscape-headshot.df17d0401847fc856cec.jpg",
     "static/media/roboSit.gif": "/static/media/roboSit.edd6fc36a74e7cc39eb1.gif",
     "static/media/asuLogo.png": "/static/media/asuLogo.c1b630cf80273382f709.png",
     "static/media/RobotoMono-Bold.ttf": "/static/media/RobotoMono-Bold.7211ab61a8b83177865a.ttf",
@@ -16,12 +17,12 @@
     "static/media/fultonLogo.png": "/static/media/fultonLogo.739a6130272a477b027a.png",
     "static/media/MeteorStudioLogo2018.png": "/static/media/MeteorStudioLogo2018.0a1956b7a933dff313a8.png",
     "index.html": "/index.html",
-    "main.e32f513e.css.map": "/static/css/main.e32f513e.css.map",
-    "main.b30767e4.js.map": "/static/js/main.b30767e4.js.map",
+    "main.b1986779.css.map": "/static/css/main.b1986779.css.map",
+    "main.c8729e50.js.map": "/static/js/main.c8729e50.js.map",
     "488.66abddb0.chunk.js.map": "/static/js/488.66abddb0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e32f513e.css",
-    "static/js/main.b30767e4.js"
+    "static/css/main.b1986779.css",
+    "static/js/main.c8729e50.js"
   ]
 }
