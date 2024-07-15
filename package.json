@@ -4,13 +4,13 @@
   "homepage": "https://gobos12.github.io",
   "private": true,
   "dependencies": {
-    "@formkit/auto-animate": "^0.8.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-headroom": "^3.2.1",
     "react-reveal": "^1.2.2",
     "react-scripts": "^5.0.1",
-    "reactstrap": "^9.2.2",
+    "bootstrap": "^5.3.3",
+    "classnames": "^2.5.1",
     "web-vitals": "^4.2.1"
   },
   "scripts": {

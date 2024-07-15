@@ -3,6 +3,7 @@ import {Fade} from "react-reveal";
 import {projects} from "../../portfolio";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import "./PreviousProjects.scss";
+import FlipCard from "../../components/flipCard/FlipCard";
 
 export default function PreviousProjects()
 {

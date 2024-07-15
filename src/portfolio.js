@@ -1,7 +1,6 @@
 const greeting = {
     name: "Orion Dobos",
     logo: require("./assets/images/roboSit.gif"),
-    nameLogo: require("./assets/images/name-logo.png"),
     headshot: require("./assets/images/dreamscape-headshot.jpg"),
     subtitle: "Game Developer and Computer Engineer",
     aboutMe: "Hi, I’m Orion! I’m a computer systems engineer and avid game developer. \nI love all things programming, whether it's embedded software development, computer networking, or game dev. ",
@@ -129,7 +128,7 @@ const projects = {
         {
             title: "Haptic Media Controller",
             sponsor: "Systems Capstone Project",
-            logo: "",
+            logo: require("./assets/images/games/ditdScene.png"),
             role: "Project Lead, Embedded Programming",
             description: "A haptic device that controls media playback and user interface within virtual reality experiences.",
             bullets: [
@@ -139,7 +138,7 @@ const projects = {
         {
             title: "Dwarves in the Dark",
             sponsor: "Game Capstone Project",
-            logo: "",
+            logo: require("./assets/images/games/ditdScene.png"),
             role: "Multiplayer & UI/UX Developer",
             description: "A multiplayer hack-and-slash where players traverse vast cave systems \n" +
                 "and engage in interesting conversation with NPCs powered by OpenAI. ",
@@ -186,12 +185,31 @@ const gameDev = {
                 description: "Casa Del Bicho is a casual exploration town builder game where the player must collect and craft items to restore their broken hometown."
             },
             {
-                name: "",
-                link: "",
+                name: "Liminal Space",
+                date: "October 2021 - December 2021",
+                role: "Lead Programmer",
+                roleSubtitle: "Programmed player mechanics, user interface, and collision physics.",
+                link: "https://ingoopa.itch.io/liminal-space",
                 logo: "",
-                description: ""
+                description: "Liminal Space is a 2D puzzle platformer from the perspective of a blinded adventurer traversing an unknown world."
             }
         ],
+    display: true
+}
+
+const gameJams = {
+    title: "Game Jams",
+    games: [
+        {
+            name: "",
+            date: "",
+            jam: "",
+            role: "",
+            link: "",
+            logo: "",
+            description: ""
+        }
+    ],
     display: true
 }
 

@@ -115,8 +115,16 @@
         display: none;
     }
 
-    .greet-text > p {
+    .greet-text > h1 {
+        text-align: center;
+    }
 
+    .greet-text > h2 {
+        text-align: center;
+    }
+
+    .greet-text > p {
+        text-align: justify;
     }
 }
 
