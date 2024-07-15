@@ -1,5 +1,4 @@
 import React from "react";
-import {Fade} from "react-reveal";
 import {projects} from "../../portfolio";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import "./PreviousProjects.scss";
@@ -16,7 +15,7 @@ export default function PreviousProjects()
                 <div className="project-list">
                     {
                         projects.projects.map((card, i) => (
-                           <ProjectCard key={i} card={card} />
+                           <FlipCard key={i} card={card} />
                         ))
                     }
                 </div>

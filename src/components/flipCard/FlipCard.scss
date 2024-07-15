@@ -9,13 +9,12 @@
   .flip-card {
     transform-style: preserve-3d;
     transition: 0.5s linear 0.1s;
+
     position: relative;
     width: inherit;
     height: inherit;
 
-    &.hover-trigger:hover {
-      transform: rotateY(180deg);
-    }
+    cursor: pointer;
 
     &.showBack {
       transform: rotateY(180deg);
@@ -52,12 +51,12 @@
         font-size: 25px;
         font-weight: normal;
         text-align: center;
-        margin: 1rem;
+        margin: 120px 1rem;
+        line-height: 1.1;
       }
 
       &.body > h2 {
         font-size: 16px;
-        margin: auto;
         text-align: center;
         color: $subTitleColor;
       }
