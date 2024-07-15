@@ -21,6 +21,11 @@ const greeting = {
             name: "LinkedIn",
             link: "https://www.linkedin.com/in/orion-dobos/",
             logo: "fa-brands fa-linkedin-in"
+        },
+        {
+            name: "Email",
+            link: "mailto:dobosorion@gmail.com",
+            logo: "fa-regular fa-envelope"
         }
     ],
 
@@ -155,6 +160,13 @@ const currentDev = {
             logo: "",
             role: "Lead Developer",
             description: "A software tool intended for scientist and researchers to view geospatial data within a three-dimensional context."
+        },
+        {
+            title: "Portfolio",
+            sponsor: "",
+            logo: "",
+            role: "Full Stack Development",
+            description: "Developing this website as a tool to learn React, Javascript, HTML, and SCSS."
         }
     ],
     display: true
@@ -162,12 +174,23 @@ const currentDev = {
 
 const gameDev = {
     title: "Game Development",
-    games: [
-        {
-            name: "",
-            link: "",
-            logo: ""
-        }
+    games:
+        [
+            {
+                name: "Casa Del Bicho",
+                date: "April 2022 - May 2022",
+                role: "UI/UX Programmer",
+                roleSubtitle: "Programmed dialog, crafting mechanics, and all in-game menus.",
+                link: "https://odobos.itch.io/casa-del-bicho",
+                logo: "",
+                description: "Casa Del Bicho is a casual exploration town builder game where the player must collect and craft items to restore their broken hometown."
+            },
+            {
+                name: "",
+                link: "",
+                logo: "",
+                description: ""
+            }
         ],
     display: true
 }
