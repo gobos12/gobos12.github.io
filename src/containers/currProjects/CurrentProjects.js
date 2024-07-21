@@ -1,6 +1,7 @@
 import React from "react";
 import {currentDev, projects} from "../../portfolio";
 import ProjectCard from "../../components/projectCard/ProjectCard";
+import FlipCard from "../../components/flipCard/FlipCard";
 
 export default function CurrentProjects()
 {
@@ -13,7 +14,7 @@ export default function CurrentProjects()
             <div className="project-list">
                 {
                     currentDev.projects.map((card, i) => (
-                        <ProjectCard key={i} card={card} />
+                        <FlipCard key={i} card={card} />
                     ))
                 }
             </div>

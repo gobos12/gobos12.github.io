@@ -128,8 +128,8 @@ const projects = {
         {
             title: "Haptic Media Controller",
             sponsor: "Systems Capstone Project",
-            logo: require("./assets/images/games/ditdScene.png"),
-            role: "Project Lead, Embedded Programming",
+            logo: require("./assets/images/games/devicedesign.png"),
+            role: "Role: Project Lead, Embedded Programming",
             description: "A haptic device that controls media playback and user interface within virtual reality experiences.",
             bullets: [
 
@@ -139,7 +139,7 @@ const projects = {
             title: "Dwarves in the Dark",
             sponsor: "Game Capstone Project",
             logo: require("./assets/images/games/ditdScene.png"),
-            role: "Multiplayer & UI/UX Developer",
+            role: "Role: Multiplayer & UI/UX Developer",
             description: "A multiplayer hack-and-slash where players traverse vast cave systems \n" +
                 "and engage in interesting conversation with NPCs powered by OpenAI. ",
             bullets: [
@@ -156,14 +156,14 @@ const currentDev = {
         {
             title: "Planetary Parfait",
             sponsor: "Meteor Studio",
-            logo: "",
+            logo: require("./assets/images/games/jmars.png"),
             role: "Lead Developer",
             description: "A software tool intended for scientist and researchers to view geospatial data within a three-dimensional context."
         },
         {
             title: "Portfolio",
             sponsor: "",
-            logo: "",
+            logo: require("./assets/images/roboSit.gif"),
             role: "Full Stack Development",
             description: "Developing this website as a tool to learn React, Javascript, HTML, and SCSS."
         }

@@ -1,70 +1,118 @@
 @import "../../utils/constants";
 
-.flip-border {
-  display: inline-flex;
-  width: 350px;
-  height: 300px;
-  margin: 25px 25px;
+.flip-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 
-  .flip-card {
-    transform-style: preserve-3d;
-    transition: 0.5s linear 0.1s;
+  width: 45%;
+  transition: all 0.3s ease-in-out;
 
-    position: relative;
-    width: inherit;
-    height: inherit;
+}
 
-    cursor: pointer;
+.flip-container::after {
+  position: absolute;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px $shadowAfter;
+  transition: opacity 0.3s ease-in-out;
+}
 
-    &.showBack {
-      transform: rotateY(180deg);
-    }
+.flip-container:hover {
+  transform: scale(1.1, 1.1);
+}
 
-    .card {
-      backface-visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+.flip-container:hover::after {
+  opacity: 1;
+}
 
-      border-radius: 2rem;
-      box-shadow: 0 1px 2px $shadowBefore;
-      background-color: $bgColor01;
+.flip-card {
+  border-radius: 2rem;
+  margin: 1.5rem;
+  box-shadow: 0 1px 2px $shadowBefore;
+  background-color: $bgColor01;
 
-      &.front {
-        transform: rotateY(0);
-      }
+  transform-style: preserve-3d;
+  transition: 0.5s linear 0.1s;
 
-      &.back {
-        transform: rotateY(180deg);
-      }
+  &.showBack {
+    transform: rotateY(180deg);
+  }
+}
 
-      &.body > img {
-        object-fit: cover;
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
-      }
+.card-front {
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
 
-      &.body > h1 {
-        font-size: 25px;
-        font-weight: normal;
-        text-align: center;
-        margin: 120px 1rem;
-        line-height: 1.1;
-      }
+  position: absolute;
+}
 
-      &.body > h2 {
-        font-size: 16px;
-        text-align: center;
-        color: $subTitleColor;
-      }
+.card-back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
 
-      &.body > p {
-        text-align: center;
-        font-size: 16px;
-      }
-    }
+.card-body {
+
+}
+
+.front-body > * {
+  line-height: 1.1;
+  font-weight: normal;
+  margin: 1.5rem;
+  align-content: center;
+}
+
+.card-front > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.front-body > img {
+  object-fit: cover;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+
+  box-shadow: 0 1px 2px $shadowAfter;
+}
+
+.front-body > h1 {
+  font-size: 25px;
+}
+
+.back-body > * {
+  line-height: 1.1;
+  font-weight: normal;
+  margin: 1.5rem;
+}
+
+.back-body > h2 {
+  font-size: 16px;
+  color: $subTitleColor;
+}
+
+.back-body > p {
+  font-size: 16px;
+}
+
+@media (max-width: $desktop-width)
+{
+  .flip-container {
+    width: 70%;
+  }
+
+  .card-front > * {
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width: $phone-width)
+{
+  .flip-container {
+    width: 80%
   }
 }
