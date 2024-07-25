@@ -92,18 +92,30 @@ const projects = {
             ]
         },
         {
-            title: "Dwarves in the Dark",
-            sponsor: "Game Capstone Project",
+            title: "Casa Del Bicho",
+            sponsor: "Game II Final Project",
             logo: require("./assets/images/games/ditdScene.png"),
-            role: "Role: Multiplayer & UI/UX Developer",
-            description: "A multiplayer hack-and-slash where players traverse vast cave systems \n" +
-                "and engage in interesting conversation with NPCs powered by OpenAI. ",
+            role: "Role: UI/UX Developer",
+            description: "Casa Del Bicho is a casual exploration town builder game where the player must collect and craft items to restore their broken hometown. This game is a collaboration between myself and other ASU students for CPI211: Game Development II.",
             bullets: [
 
             ],
             links: [
-
+                {
+                    name: "Itch.io",
+                    link: "https://odobos.itch.io/casa-del-bicho",
+                    logo: "fa-brands fa-itch-io"
+                }
             ]
+        },
+        {
+            title: "Liminal Space",
+            sponsor: "Game I Final Project",
+            logo: "",
+            role: "Role: Lead Developer",
+            description: "Liminal Space is a 2D puzzle platformer game from the perspective of a blinded adventurer traversing an unknown world.",
+            bullets: [],
+            links: []
         }
     ],
     display: true
