@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProjectCard.scss";
+import Button from "../button/Button";
 
 export default function ProjectCard({card})
 {
@@ -10,6 +11,7 @@ export default function ProjectCard({card})
               <h2>{card.role}</h2>
               <div className="project-card-details">
                   <p>{card.description}</p>
+                  <Button content={card.links}></Button>
               </div>
           </div>
       </div>

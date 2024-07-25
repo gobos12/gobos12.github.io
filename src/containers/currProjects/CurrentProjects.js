@@ -14,7 +14,7 @@ export default function CurrentProjects()
             <div className="project-list">
                 {
                     currentDev.projects.map((card, i) => (
-                        <FlipCard key={i} card={card} />
+                        <ProjectCard key={i} card={card} />
                     ))
                 }
             </div>

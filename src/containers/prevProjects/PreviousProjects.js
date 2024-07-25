@@ -1,8 +1,8 @@
 import React from "react";
 import {projects} from "../../portfolio";
 import ProjectCard from "../../components/projectCard/ProjectCard";
-import "./PreviousProjects.scss";
 import FlipCard from "../../components/flipCard/FlipCard";
+import "./PreviousProjects.scss";
 
 export default function PreviousProjects()
 {
@@ -15,7 +15,7 @@ export default function PreviousProjects()
                 <div className="project-list">
                     {
                         projects.projects.map((card, i) => (
-                           <FlipCard key={i} card={card} />
+                           <ProjectCard key={i} card={card} />
                         ))
                     }
                 </div>

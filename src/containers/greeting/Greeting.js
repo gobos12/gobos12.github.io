@@ -1,5 +1,6 @@
 import React from "react";
 import {greeting} from "../../portfolio";
+import Button from "../../components/button/Button";
 import "./Greeting.scss";
 
 export default function Greeting()
@@ -13,19 +14,7 @@ export default function Greeting()
                     <h1>{greeting.name}</h1>
                     <h2>{greeting.subtitle}</h2>
                     <p>{greeting.aboutMe}</p>
-                    <div className="greet-buttons">
-                        {
-                            greeting.resources.map((button, i) => {
-                                return (
-                                    <div className="button" title={button.name}>
-                                        <a href={button.link} target="_blank">
-                                            <i className={button.logo}></i>
-                                        </a>
-                                    </div>
-                                );
-                            })
-                        }
-                    </div>
+                    <Button content={greeting.resources}></Button>
                 </div>
                 <div className="greet-headshot">
                     <img src={greeting.headshot} alt="me!" width="150" height="200"/>

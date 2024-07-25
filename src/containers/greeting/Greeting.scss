@@ -50,41 +50,6 @@
 
 // ----------------------------------------------------
 
-// -------------------- Buttons -----------------------
-
-.greet-buttons {
-    display: flex;
-    justify-content: left;
-    margin-left: 20px;
-    margin-top: -20px;
-}
-
-.button {
-    background-color: $headerColor;
-    align-content: center;
-    text-align: center;
-
-    width: 30px;
-    height: 30px;
-    font-size: 25px;
-
-    padding: 10px 10px;
-    margin-right: 1rem;
-    border-radius: 50%;
-
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: $headerHover;
-}
-
-.button > a {
-    color: $textColor;
-}
-
-// ----------------------------------------------------
-
 .greet-headshot {
     align-content: center;
     padding: 20px 20px;
@@ -124,7 +89,8 @@
     }
 
     .greet-text > p {
-        text-align: justify;
+        text-align: center;
+        margin-left: 0;
     }
 }
 

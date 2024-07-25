@@ -1,0 +1,32 @@
+@import "../../utils/constants";
+
+.button-border {
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+ // margin-top: -20px;
+}
+
+.button {
+  background-color: $headerColor;
+  align-content: center;
+  text-align: center;
+
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+
+  padding: 10px 10px;
+  margin-right: 1rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $headerHover;
+}
+
+.button > a {
+  color: $textColor;
+}

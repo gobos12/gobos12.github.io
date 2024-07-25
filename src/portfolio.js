@@ -3,7 +3,9 @@ const greeting = {
     logo: require("./assets/images/roboSit.gif"),
     headshot: require("./assets/images/dreamscape-headshot.jpg"),
     subtitle: "Game Developer and Computer Engineer",
-    aboutMe: "Hi, I’m Orion! I’m a computer systems engineer and avid game developer. \nI love all things programming, whether it's embedded software development, computer networking, or game dev. ",
+    aboutMe: "Hi, I’m Orion! I’m a computer systems engineer and avid game developer. " +
+        "\nI love all things programming, whether it's embedded software development, computer networking, or game dev. " +
+        "Check out some of my projects below!",
 
     resources: [
         {
@@ -69,59 +71,6 @@ const skills = {
     display: false
 };
 
-const experience = {
-    header: "Experience",
-    experience: [
-        {
-            title: "Extended Reality Creative Developer",
-            company: "Meteor Studio",
-            logo: require("./assets/images/logos/MeteorStudioLogo2018.png"),
-            duration: "June 2022 - Present",
-            description: "",
-            link: "https://meteor.ame.asu.edu/",
-            bullets: [
-                "Lead developer for Planetary Parfait, an award-winning virtual reality application that utilizes \n" +
-                "the Unity Game Engine to build 3D terrains using remote-sensing data from GIS tools.",
-                "Coordinated the Cloud Infrastructure Guild at Meteor Studio, with a focus on upskilling \n" +
-                "students on various cloud systems and architectural solutions to be used for prevProjects in and out \n" +
-                "of the lab.",
-                "Implemented multiplayer mechanics for ROAM, an interactive VR experience spanning across \n" +
-                "ASU’s Mountain America Stadium."
-            ]
-        },
-        {
-            title: "Teachers Assistant",
-            company: "Ira A. Fulton Fulton Schools of Engineering",
-            logo: require("./assets/images/logos/sunburstLogo.png"),
-            duration: "August 2022 - May 2024",
-            description: "",
-            bullets: [
-                "Aided students in programming and debugging their prevProjects in Gamemaker Studio and the \n" +
-                "Unity Game Engine throughout the semester.",
-                "Led a lecture series on integrating multiplayer systems within a Unity project.",
-                "Created a website that contains class resources for present and future students to utilize in their \n" +
-                "studies."
-            ]
-        },
-        {
-            title: "SCAI Mentor",
-            company: "SCAI Academic Advising Office",
-            logo: require("./assets/images/logos/fultonLogo.png"),
-            duration: "May 2022 - December 2023",
-            description: "",
-            link: "https://scai.engineering.asu.edu/scai-mentors/",
-            bullets: [
-                "Worked with incoming and current freshman SCAI students to help ease them into their first \n" +
-                "year at ASU.",
-                "Panelist for SCAI’s the Limit events, offering advice and answering questions for freshman \n" +
-                "students studying at ASU.",
-                "Aided the SCAI advising office with ASU101 advising classes."
-            ]
-        }
-    ],
-    display: false
-};
-
 const projects = {
     header: "Previous Projects",
     projects: [
@@ -133,6 +82,13 @@ const projects = {
             description: "A haptic device that controls media playback and user interface within virtual reality experiences.",
             bullets: [
 
+            ],
+            links: [
+                {
+                    name: "Youtube",
+                    link: "https://youtu.be/f9jvCWmlDso",
+                    logo: "fa-brands fa-youtube"
+                }
             ]
         },
         {
@@ -143,6 +99,9 @@ const projects = {
             description: "A multiplayer hack-and-slash where players traverse vast cave systems \n" +
                 "and engage in interesting conversation with NPCs powered by OpenAI. ",
             bullets: [
+
+            ],
+            links: [
 
             ]
         }
@@ -157,15 +116,43 @@ const currentDev = {
             title: "Planetary Parfait",
             sponsor: "Meteor Studio",
             logo: require("./assets/images/games/jmars.png"),
-            role: "Lead Developer",
-            description: "A software tool intended for scientist and researchers to view geospatial data within a three-dimensional context."
+            role: "Role: Lead Developer",
+            description: "A software tool intended for scientist and researchers to view geospatial data within a three-dimensional context.",
+            links: [
+                {
+                    name: "Steam",
+                    link: "https://store.steampowered.com/app/2721860/Planetary_Parfait/",
+                    usingFA: true,
+                    logo: "fa-brands fa-steam"
+                },
+                {
+                    name: "Meta Quest",
+                    link: "https://www.meta.com/experiences/5666705306792218/",
+                    usingFA: true,
+                    logo: "fa-brands fa-meta"
+                },
+                {
+                    name: "Meteor Studio",
+                    link: "https://meteor.ame.asu.edu/projects/jmars-xr/",
+                    usingFA: false,
+                    logo: "fa-solid fa-vr-cardboard"
+                }
+                ]
         },
         {
             title: "Portfolio",
             sponsor: "",
             logo: require("./assets/images/roboSit.gif"),
-            role: "Full Stack Development",
-            description: "Developing this website as a tool to learn React, Javascript, HTML, and SCSS."
+            role: "Role: Full Stack Developer",
+            description: "Developing this website as a tool to learn React, Javascript, HTML, and SCSS.",
+            links: [
+                {
+                    name: "Github",
+                    link: "https://github.com/gobos12/gobos12.github.io",
+                    usingFA: true,
+                    logo: "fa-brands fa-github"
+                }
+                ]
         }
     ],
     display: true
@@ -252,7 +239,6 @@ const certs = {
 export {
     greeting,
     skills,
-    experience,
     projects,
     education,
     gameDev,
