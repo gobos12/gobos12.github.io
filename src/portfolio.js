@@ -33,44 +33,6 @@ const greeting = {
     display: true
 };
 
-const skills = {
-    title: "Skills",
-    softwareTitle: "Technical Skills",
-    softwareSkills: [
-        {
-            name: "HTML5",
-            logo: require("./assets/images/logos/htmlLogo.png"),
-            fontAwesome: "fab fa-html5"
-        },
-        {
-            name: "C++",
-            logo: require("./assets/images/logos/cppLogo.png"),
-            fontAwesome: ""
-        },
-        {
-            name: "C#",
-            logo: require("./assets/images/logos/csharpLogo.png"),
-            fontAwesome: ""
-        },
-        {
-            name: "Python",
-            logo: require("./assets/images/logos/pythonLogo.png"),
-            fontAwesome: "fab fa-python"
-        },
-        {
-            name: "Unity",
-            logo: require("./assets/images/logos/unityLogo.png"),
-            fontAwesome: "fab fa-unity"
-        },
-        {
-            name: "Unreal",
-            logo: require("./assets/images/logos/unrealLogo.png"),
-            fontAwesome: ""
-        }
-    ],
-    display: false
-};
-
 const projects = {
     header: "Previous Projects",
     projects: [
@@ -115,7 +77,13 @@ const projects = {
             role: "Role: Lead Developer",
             description: "Liminal Space is a 2D puzzle platformer game from the perspective of a blinded adventurer traversing an unknown world.",
             bullets: [],
-            links: []
+            links: [
+                {
+                    name: "Itch.io",
+                    link: "https://ingoopa.itch.io/liminal-space",
+                    logo: "fa-brands fa-itch-io"
+                }
+            ]
         }
     ],
     display: true
@@ -200,31 +168,63 @@ const gameJams = {
     title: "Game Jams",
     games: [
         {
-            name: "",
-            date: "",
-            jam: "",
+            name: "Plant Donor",
+            date: "Feburary 2023",
+            jam: "Ludum Dare 52",
             role: "",
-            link: "",
             logo: "",
-            description: ""
+            description: "Plant Donor is a 2D harvest game created by myself and a group of friends for Ludum Dare 52. The team for this game jam was “Harvest”, so we created a game where players can harvest organs as if they were plants and sell them on the black market. This game was created in Unity, and all game assets were made in Microsoft Paint and Aesprite.",
+            links: [
+                {
+                    name: "Itch.io",
+                    link: "https://odobos.itch.io/plant-donor",
+                    logo: "fa-brands fa-itch-io"
+                },
+                {
+                    name: "Ludum Dare",
+                    link: "https://ldjam.com/events/ludum-dare/52/plant-donor",
+                    logo: ""
+                }
+            ]
+        },
+        {
+            name: "Waddle in Time",
+            date: "October 2022",
+            jam: "Ludum Dare 51",
+            role: "",
+            logo: "",
+            description: "Waddle in Time is a collaborative project between myself and a group of friends for Ludum Dare 51. The theme was \"Every 10 Seconds\", and we created this game from start to finish in 72 hours to satisfy the group competition deadline. This game was made in Gamemaker Studio, and all the game assets were made in Microsoft Paint and Aesprite.",
+            links: [
+                {
+                    name: "Itch.io",
+                    link: "https://odobos.itch.io/waddle-in-time",
+                    logo: "fa-brands fa-itch-io"
+                },
+                {
+                    name: "Ludum Dare",
+                    link: "https://ldjam.com/events/ludum-dare/51/waddle-in-time",
+                    logo: ""
+                }
+            ]
+        },
+        {
+            name: "Yo Dawg, I Heard You Like Cars",
+            date: "April 2022",
+            jam: "Meme Jam, hosted by ASU's CPI211",
+            role: "",
+            logo: "",
+            description: "Have you ever wanted to put a car in a car, so you can drive while you drive? Yo Dawg, I Heard You Like Cars is a fun racing game where you get to drive around a track on the inside of a moving car! This game was made during a 10-day meme-themed game jam for ASU's Game 2 course.",
+            links: [
+                {
+                    name: "Itch.io",
+                    link: "https://odobos.itch.io/yo-dawg-i-heard-you-like-cars",
+                    logo: "fa-brands fa-itch-io"
+                }
+            ]
         }
     ],
     display: true
 }
-
-const education = {
-    header: "Education",
-    schools: [
-        {
-            school: "Arizona State University",
-            degree: "Bachelor of Science in Engineering in Computer Systems Engineering",
-            logo: require("./assets/images/logos/asuLogo.png"),
-            duration: "August 2020 - May 2024"
-        }
-    ],
-
-    display: false
-};
 
 const certs = {
     header: "Certifications",
@@ -250,9 +250,7 @@ const certs = {
 
 export {
     greeting,
-    skills,
     projects,
-    education,
     gameDev,
     currentDev,
     certs
