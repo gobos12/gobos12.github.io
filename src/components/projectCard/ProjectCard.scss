@@ -14,9 +14,6 @@
   background-color: $bgColor01;
 }
 
-.project-card-text {
-}
-
 .project-card-text > * {
   font-weight: normal;
   margin: 1.5rem 1rem 1rem 1.5rem;
@@ -54,9 +51,22 @@
   }
 }
 
-@media (max-width: $phone-width)
+@media (max-width: $tablet-width)
 {
   .project-card {
-    width: 80%
+    width: 80%;
   }
+
+  .project-card-text > h2 {
+    margin: 0 0.5rem 0.5rem 1.5rem;
+  }
+
+  .project-card-details > * {
+    padding: 0 0;
+  }
+
+  .project-card-details > p {
+    margin-left: 0;
+  }
+
 }
