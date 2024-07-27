@@ -4,13 +4,13 @@ const greeting = {
     headshot: require("./assets/images/dreamscape-headshot.jpg"),
     subtitle: "Game Developer and Computer Engineer",
     aboutMe: "Hi, I’m Orion! I’m a computer systems engineer and avid game developer. " +
-        "\nI love all things programming, whether it's embedded software development, computer networking, or game dev. " +
+        "\nI love all things programming, whether it's computer networking, virtual reality, or game development. " +
         "Check out some of my projects below!",
 
     resources: [
         {
             name: "Resume",
-            link: "https://drive.google.com/file/d/1Yt7-fISP1QFYDDpBlxm9VXHrk4WSn9aL/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1ZrscOi6zJby4IPiztm7bZ1GfZCskF2P2/view?usp=sharing",
             logo: "fa-regular fa-file-lines"
         },
         {
@@ -42,7 +42,7 @@ const projects = {
             date: "August 2023 - May 2024",
             logo: require("./assets/images/games/devicedesign.png"),
             role: "Role: Project Lead, Embedded Programming",
-            description: "A haptic device that controls media playback and user interface within virtual reality experiences." +
+            description: "A haptic device that controls media playback and user interface within virtual reality experiences. " +
                 "This device was created as a part of a capstone project concluding my Bachelor's in Computer Engineering at Arizona State University.",
             bullets: [
 
@@ -60,7 +60,7 @@ const projects = {
             sponsor: "Game Engine Programming Final Project",
             date: "November 2023",
             role: "Role: Game Engine Programmer & Solo Developer",
-            description: "This game was created as the final project for a game engine development course at Arizona State University." +
+            description: "This game was created as the final project for a game engine development course at Arizona State University. " +
                 "For this course, I programmed a Unity-like game engine using C# and the Monogame framework. Fish was created using this custom game engine.",
             links: [
                 {
@@ -94,7 +94,7 @@ const projects = {
             sponsor: "Game I Final Project",
             date: "October 2021 - December 2021",
             role: "Role: Game Programmer",
-            description: "Liminal Space is a 2D puzzle platformer game from the perspective of a blinded adventurer traversing an unknown world." +
+            description: "Liminal Space is a 2D puzzle platformer game from the perspective of a blinded adventurer traversing an unknown world. " +
                 "As the only programmer, I developed all the player mechanics, user interface, and collision physics.",
             bullets: [],
             links: [
@@ -241,7 +241,8 @@ const gameJams = {
             jam: "Ludum Dare 51",
             role: "Role: Gameplay Programmer",
             logo: "",
-            description: "Waddle in Time is a collaborative project between myself and a group of friends for Ludum Dare 51. The theme was \"Every 10 Seconds\", and we created this game from start to finish in 72 hours to satisfy the group competition deadline. This game was made in Gamemaker Studio, and all the game assets were made in Microsoft Paint and Aesprite.",
+            description: "Waddle in Time is a collaborative project between myself and a group of friends for Ludum Dare 51. The theme was \"Every 10 Seconds\", and we created this game from start to finish in 72 hours to satisfy the group competition deadline. " +
+                "This game was made in Gamemaker Studio, and all the game assets were made in Microsoft Paint and Aesprite.",
             links: [
                 {
                     name: "Itch.io",
@@ -266,7 +267,9 @@ const gameJams = {
             jam: "Meme Jam, hosted by ASU's CPI211",
             role: "Role: UI/UX Design & Development",
             logo: "",
-            description: "Have you ever wanted to put a car in a car, so you can drive while you drive? Yo Dawg, I Heard You Like Cars is a fun racing game where you get to drive around a track on the inside of a moving car! This game was made during a 10-day meme-themed game jam for ASU's Game 2 course.",
+            description: "Have you ever wanted to put a car in a car, so you can drive while you drive? " +
+                "Yo Dawg, I Heard You Like Cars is a fun racing game where you get to drive around a track on the inside of a moving car! " +
+                "This game was made during a 10-day meme-themed game jam for ASU's Game 2 course.",
             links: [
                 {
                     name: "Itch.io",
