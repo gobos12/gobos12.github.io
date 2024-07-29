@@ -43,7 +43,8 @@ const projects = {
             logo: require("./assets/images/games/devicedesign.png"),
             role: "Role: Project Lead, Embedded Programming",
             description: "A haptic device that controls media playback and user interface within virtual reality experiences. " +
-                "This device was created as a part of a capstone project concluding my Bachelor's in Computer Engineering at Arizona State University.",
+                "This device was created as a part of a capstone project concluding my bachelor's degree in computer engineering at Arizona State University. " +
+                "Responsibilities included project management, embedded programming, and HID design.",
             bullets: [
 
             ],
@@ -76,7 +77,7 @@ const projects = {
             date: "April 2022 - May 2022",
             role: "Role: UI/UX Developer",
             description: "Casa Del Bicho is a casual exploration town builder game where the player must collect and craft items to restore their broken hometown. " +
-                "As the UI/UX Developer, I programmed the dialog, crafting mechanics, and in-game menus." +
+                "As the UI/UX Developer, I programmed the dialog, crafting mechanics, and in-game menus. " +
                 "This game is a collaboration between myself and other ASU students for CPI211: Game Development II.",
             bullets: [
 
@@ -155,32 +156,6 @@ const currentDev = {
                 ]
         }
     ],
-    display: true
-}
-
-const gameDev = {
-    title: "Game Development",
-    games:
-        [
-            {
-                name: "Casa Del Bicho",
-                date: "April 2022 - May 2022",
-                role: "UI/UX Programmer",
-                roleSubtitle: "Programmed dialog, crafting mechanics, and all in-game menus.",
-                link: "https://odobos.itch.io/casa-del-bicho",
-                logo: "",
-                description: "Casa Del Bicho is a casual exploration town builder game where the player must collect and craft items to restore their broken hometown."
-            },
-            {
-                name: "Liminal Space",
-                date: "October 2021 - December 2021",
-                role: "Lead Programmer",
-                roleSubtitle: "Programmed player mechanics, user interface, and collision physics.",
-                link: "https://ingoopa.itch.io/liminal-space",
-                logo: "",
-                description: "Liminal Space is a 2D puzzle platformer from the perspective of a blinded adventurer traversing an unknown world."
-            }
-        ],
     display: true
 }
 
@@ -307,7 +282,6 @@ const certs = {
 export {
     greeting,
     projects,
-    gameDev,
     gameJams,
     currentDev,
     certs
