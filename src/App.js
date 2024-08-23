@@ -1,21 +1,25 @@
-import Header from "./containers/header/Header";
-import Greeting from "./containers/greeting/Greeting";
-import PreviousProjects from "./containers/prevProjects/PreviousProjects";
-import CurrentProjects from "./containers/currProjects/CurrentProjects";
-import GameJams from "./containers/games/Game";
+import{
+    BrowserRouter as Router,
+    Routes,
+    Route
+} from "react-router-dom";
+import Navbar from "./components/navBar/Navbar";
+import About from "./components/pages/about";
 import './App.scss';
+import Home from "./components/pages/home";
+
 
 function App() {
   return (
-    <div className="App">
-        <Header />
-        <div className="App-Sections">
-            <Greeting />
-            <CurrentProjects />
-            <PreviousProjects />
-            <GameJams />
-        </div>
-    </div>
+      <div className="App">
+          <Router>
+              {/*<Navbar/>*/}
+              <Routes>
+                  <Route path="/home" element={<Home/>}/>
+                  <Route path="/about" element={<About/>}/>
+              </Routes>
+          </Router>
+      </div>
   );
 }
 
