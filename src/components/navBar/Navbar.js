@@ -10,6 +10,9 @@ export default function Navbar()
                     <NavLink to="/home" activeStyle>
                         Home
                     </NavLink>
+                    <NavLink to="/projects" activeStyle>
+                        Projects
+                    </NavLink>
                     <NavLink to="/about" activeStyle>
                         About
                     </NavLink>
