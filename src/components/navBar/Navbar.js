@@ -7,15 +7,15 @@ export default function Navbar()
         <>
             <Nav>
                 <NavMenu>
-                    <NavLink to="/home" activeStyle>
+                    <NavLink to="/" activeStyle>
                         Home
                     </NavLink>
                     <NavLink to="/projects" activeStyle>
                         Projects
                     </NavLink>
-                    <NavLink to="/about" activeStyle>
+{/*                    <NavLink to="/about" activeStyle>
                         About
-                    </NavLink>
+                    </NavLink>*/}
                 </NavMenu>
             </Nav>
         </>
