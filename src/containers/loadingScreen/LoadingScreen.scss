@@ -1,0 +1,17 @@
+@import "../../utils/constants";
+
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.loading-container {
+  text-shadow: 0 3px 1px $headerColor;
+}
+
+.loading-anim {
+  margin-top: 2rem;
+}

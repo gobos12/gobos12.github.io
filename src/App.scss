@@ -10,6 +10,7 @@
   flex-direction: column;
   width: 70%;
   margin: auto;
+  transition-duration: 0.1s;
 }
 
 @media (max-width: $tablet-width)
